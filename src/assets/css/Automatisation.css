@@ -1,0 +1,344 @@
+.Automatisation {
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+.Automatisation .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.Automatisation .titre {
+  text-align: center;
+}
+
+.Automatisation .titre h1 {
+  color: white;
+}
+
+.Automatisation .barre {
+  background-color: #6870e0;
+  color: white;
+}
+
+.Automatisation .colore {
+  height: 70vh;
+  width: 100%;
+  background-color: #262935;
+}
+
+.Automatisation .boton {
+  /* display: flex;
+  justify-content: space-between;
+  margin-top: 75px; */
+
+  display: grid;
+  grid-template-columns: repeat(9, 3fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: end;
+}
+.Automatisation .etpe {
+  height: 40px;
+  width: 150px;
+  border: 1px solid #6870e0;
+  border-radius: 20px;
+  background-color: #6870e0;
+  color: white;
+  cursor: pointer;
+}
+.Automatisation .etpe1 {
+  height: 40px;
+  width: 150px;
+  border: 1px solid #6870e0;
+  border-radius: 20px;
+  background-color: #262935;
+  color: #6870e0;
+  cursor: pointer;
+} 
+
+.Automatisation .etpe1:hover {
+  background-color: #6870e0;
+  color: white;
+}
+
+.Automatisation .flex {
+  display: flex;
+  margin-top: 105px;
+  justify-content: space-between;
+}
+
+.Automatisation .flex p {
+  color: white;
+}
+
+.Automatisation .bull {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #6870e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6870e0;
+  position: relative;
+  list-style: none;
+  transition: 0.5s;
+  cursor: pointer;
+  /* margin: 0 20px; */
+}
+
+.Automatisation .bull .saiPas {
+  position: absolute;
+  bottom: -95px;
+  width: 250px;
+  height: 100px;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.Automatisation .bull .saiPas:before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 50px;
+  background: #fff;
+  bottom: 90;
+  transform: rotate(45deg);
+}
+
+.Automatisation .bull:hover .saiPas {
+  visibility: visible;
+  opacity: 1;
+}
+
+.Automatisation .icon {
+  font-size: 25px;
+  color: white;
+}
+
+.Automatisation .bulle {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #6870e0;
+  border-radius: 50%;
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Automatisation .tracer {
+  height: 1px;
+  width: 100px;
+  border: 1px dashed #6870e0;
+}
+
+.Automatisation .ball {
+  display: flex;
+  align-items: center;
+}
+
+.Automatisation .chat h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6870e0;
+}
+
+.Automatisation .texto p {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.Automatisation .trai {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #6870e0;
+  margin-top: 30px;
+}
+
+/* DEUXIEME PARTIE */
+.Automatisation .separe {
+  display: flex;
+  justify-content: space-between;
+}
+.Automatisation .carre {
+  height: 600px;
+  width: 600px;
+  /* border: 1px solid red; */
+}
+.Automatisation .carre img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Automatisation .tire {
+  text-align: center;
+}
+.Automatisation .loi {
+  display: flex;
+  justify-content: center;
+}
+.Automatisation .par {
+  height: 150px;
+  width: 500px;
+}
+
+/* TROISIEME PARTIE */
+.Automatisation .send {
+  height: 63vh;
+  width: 100%;
+  border: 1px solid #6870e0;
+  background-color: #6870e0;
+  margin-top: 10px;
+}
+.Automatisation .premiText {
+  margin-top: 20%;
+}
+
+.Automatisation .misApart h1 {
+  color: white;
+}
+
+.Automatisation .paragraphe p {
+  color: white;
+  align-items: center;
+}
+
+.Automatisation .etoile {
+  display: flex;
+}
+
+.Automatisation .etoile p {
+  color: white;
+}
+.Automatisation .flax {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Automatisation .cool {
+  display: flex;
+  gap: 30px;
+}
+.Automatisation .caro {
+  height: 200px;
+  width: 300px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: white;
+}
+.Automatisation .caro .second p{
+  margin: 0;
+}
+.Automatisation .second {
+  margin-top: 5px;
+  height: 140px;
+  width: 270px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.Automatisation .forImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Automatisation .photo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.Automatisation .ico {
+  font-size: 25px;
+  color: #6870e0;
+}
+
+.Automatisation .bout {
+  height: 45px;
+  width: 100%;
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.Automatisation .search {
+  display: flex;
+  align-items: center;
+}
+
+.Automatisation .fin {
+  display: flex;
+  gap: 15px;
+}
+.Automatisation .recher {
+  height: 30px;
+  width: 190px;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+.Automatisation .recher input {
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.Automatisation .ic {
+  color: #6870e0;
+}
+
+@media screen and (max-width: 1323px) {
+  .Automatisation .boton {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media screen and (max-width: 1311px) {
+  .Automatisation .boton {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1211px) {
+  .Automatisation .boton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 675px) {
+  .Automatisation .boton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .Automatisation .boton {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .Automatisation .boton {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

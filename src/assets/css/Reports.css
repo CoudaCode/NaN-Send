@@ -1,0 +1,96 @@
+.Reports {
+  background-color: #272935;
+  width: 100%;
+  color: #fff;
+}
+.Reports #menu a {
+  color: #8e8e93;
+}
+
+.Reports #menu a i {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+  margin-top: 1.2rem;
+}
+.Reports #menu a span {
+  position: relative;
+  left: 1rem;
+  color: #272935;
+  font-weight: 400;
+}
+.Reports #menu a:hover {
+  color: #6870e097;
+  font-weight: 200;
+}
+.Reports #menu #ClickHover i {
+  color: #6870e0;
+}
+.Reports #menu #ClickHover span {
+  color: #6870e0;
+  font-weight: 500;
+}
+.Reports #btnBottom {
+  color: #272935;
+  text-align: center;
+}
+.Reports a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .Reports .rapportCard2 td {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Reports #btnBottom {
+    bottom: 0 !important;
+    padding: 5px !important;
+    display: block;
+    position: relative !important;
+    width: 10vw;
+  }
+  .Reports #btnBottom h5 {
+    font-size: 0.5rem;
+  }
+  .Reports #btnBottom h6 {
+    font-size: 0.5rem;
+  }
+}
+
+.Reports .rapportH1 {
+  color: #6870e0;
+}
+.Reports .rapportCard1 {
+  background: none;
+  border: none;
+}
+.Reports .rapportCard1 .btnRecherche {
+  color: #fff;
+  border: 1px solid #6870e0;
+}
+.Reports .rapportCard1 .btnRecherche:hover {
+  color: #ffffff9c;
+  background-color: #6870e0;
+}
+.Reports .rapportCard1 .btnRestaurer {
+  background-color: #6870e0;
+  border: none;
+  border: 1px solid #6870e0;
+}
+.Reports .rapportCard1 .btnRestaurer:hover {
+  border: 1px solid #6870e0;
+  color: #ffffff9c;
+  background: none;
+}
+.Reports .rapportCard2 .btn {
+  background-color: #272935;
+  border: 1px solid #6870e0;
+}
+
+.Reports .rapportCard2 .btn:hover {
+  background-color: #6870e0;
+  color: #272935;
+}
+.Reports ins {
+  color: #6870e0;
+}

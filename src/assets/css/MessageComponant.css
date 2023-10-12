@@ -1,0 +1,58 @@
+.MessageComponant {
+  background-color: #272935;
+  width: 100%;
+  color: #fff;
+}
+.MessageComponant #menu a {
+  color: #8e8e93;
+}
+
+.MessageComponant #menu a i {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+  margin-top: 1.2rem;
+}
+.MessageComponant #menu a span {
+  position: relative;
+  left: 1rem;
+  color: #272935;
+  font-weight: 400;
+}
+.MessageComponant #menu a:hover {
+  color: #6870e097;
+  font-weight: 200;
+}
+.MessageComponant #menu #ClickHover i {
+  color: #6870e0;
+}
+.MessageComponant #menu #ClickHover span {
+  color: #6870e0;
+  font-weight: 500;
+}
+.MessageComponant #btnBottom {
+  color: #272935;
+  text-align: center;
+}
+.MessageComponant a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .MessageComponant .rapportCard2 td {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .MessageComponant #btnBottom {
+    bottom: 0 !important;
+    padding: 5px !important;
+    display: block;
+    position: relative !important;
+    width: 10vw;
+  }
+  .MessageComponant #btnBottom h5 {
+    font-size: 0.5rem;
+  }
+  .MessageComponant #btnBottom h6 {
+    font-size: 0.5rem;
+  }
+}

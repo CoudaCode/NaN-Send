@@ -1,0 +1,145 @@
+.Navbar .Link {
+  text-decoration: none;
+}
+.Navbar nav {
+  width: 100%;
+  /* max-width: 1280px; */
+  height: 5rem;
+  position: fixed;
+  /* margin: 0 auto; */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 90px;
+  transition: 0.1s;
+  text-decoration: none;
+  background-color: var(--ma--couleur--text);
+  box-shadow: var(--ma-couleur-bouton) 2px 2px 2px 2px;
+}
+.Navbar nav a {
+  text-decoration: none;
+}
+.Navbar .navlist {
+  display: flex;
+  column-gap: 5rem;
+  font-size: 1.01rem;
+}
+.Navbar .navlist li {
+  position: relative;
+}
+.Navbar .navlist a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--ma-couleur-principale);
+}
+.Navbar .navlist a::after {
+  content: "";
+  width: 0;
+  background-color: var(--ma-couleur-bouton);
+  transition: 0.5s all linear;
+  left: 0;
+  height: 2px;
+  bottom: -4px;
+  position: absolute;
+}
+.Navbar .navlist a:hover:after {
+  width: 100%;
+}
+.reactIcon-logo {
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: var(--ma-couleur-bouton);
+}
+.Navbar nav .span1 {
+  text-decoration: none;
+  color: var(--ma-couleur-principale);
+  font-size: 1.8rem;
+}
+.Navbar nav .span2 {
+  text-decoration: none;
+  color: var(--ma-couleur-bouton);
+  font-size: 1.8rem;
+}
+.Navbar .navlist .Acceuil-active {
+  text-decoration: none;
+  color: var(--ma-couleur-bouton);
+}
+.Navbar .btn {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--ma-couleur-principale);
+  border-radius: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  border: 2px solid var(--ma-couleur-principale);
+  color: var(--ma--couleur--text);
+  box-shadow: 1px 1px 1px 1px solid grey;
+  cursor: pointer;
+}
+.Navbar .btn:hover {
+  background-color: var(--ma-couleur-bouton);
+  color: var(--ma--couleur--text);
+  border: 2px solid var(--ma-couleur-bouton);
+}
+.Navbar .menuBurger,
+.Navbar .close {
+  font-size: 2.5rem;
+  color: var(--ma-couleur-bouton);
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1020px) {
+  .Navbar .navlist {
+    column-gap: 2rem;
+    font-size: 0.2rem +1.4vw;
+  }
+  .reactIcon-logo {
+    font-size: 2rem;
+    margin-left: -3rem;
+  }
+  .Navbar nav .span1,
+  .Navbar .span2 {
+    font-size: 1.6rem;
+  }
+  .Navbar .btn {
+    padding: 0.6rem 1rem;
+    border-radius: 1.3rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  .Navbar .menuBurger {
+    display: block;
+  }
+  .Navbar .btn {
+    display: none;
+  }
+  .Navbar .navlist {
+    position: fixed;
+    top: 8%;
+    flex-direction: column;
+    background-color: var(--ma-couleur-bouton);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    transition: 0.25s;
+    left: -100%;
+  }
+  .Navbar .navlist li {
+    padding: 20px 0;
+  }
+  .Navbar .navlist li:hover {
+    background-color: var(--mon--autre--couleur);
+  }
+  .Navbar .navlist a {
+    font-size: 1.2rem;
+  }
+  .Navbar .navlist .Acceuil-active {
+    color: var(--ma--couleur--text);
+  }
+  .Navbar .active {
+    left: 0;
+  }
+}
