@@ -1,4 +1,3 @@
-import React from "react";
 import "./../assets/css/Verification.css";
 import whatsap from "./../assets/images/whatsapp.jpeg";
 import Mail from "./../assets/images/Mail.png";
@@ -22,9 +21,9 @@ function Verification() {
 
           <div className="input">
             <p>
-              <p>Complétez vos coordonnées pour commencer.</p>
-              <br />
-              <p>Complétez vos coordonnées pour commencer.</p>
+              Quels sont les principaux canaux de communication que vous
+              souhaitez connecter ? <br />{" "}
+              <span>Vous pouriez Choisir que trois canaux</span>
             </p>
           </div>
 
@@ -47,19 +46,45 @@ function Verification() {
               </li>
             </ul>
           </div>
-          <div className="container choix">
-            <div>
-              <input type="checkbox" />
-              <label htmlFor="">dd</label>
+          <fieldset>
+            <legend>
+              Quels es votre ojectiifs principals en utilisant NaN Send{" "}
+            </legend>
+
+            <div className="champ">
+              <input type="radio" id="entrantes" name="entrantes" />
+              <label htmlFor="entrantes">
+                Gerer les conversations entrantes
+              </label>
             </div>
-            <input type="checkbox" />
-            <input type="checkbox" />
-            <input type="checkbox" />
-            <input type="checkbox" />
-            <input type="checkbox" />
-          </div>
+            <div className="champ">
+              <input type="radio" id="diffusion" name="entrantes" />
+              <label>Diffusion WathsApp</label>
+            </div>
+            <div className="champ">
+              <input type="radio" id="annonces" name="entrantes" />
+              <label htmlFor="annonces">Annonces Click-to Chat</label>
+            </div>
+            <div className="champ">
+              <input type="radio" id="Professionnels" name="entrantes" />
+              <label htmlFor="Professionnels">
+                Envoyer des Campagnes Professionnels
+              </label>
+            </div>
+            <div className="champ">
+              <input type="radio" id="business" name="entrantes" />
+              <label htmlFor="business">
+                WathsApp Business Plusieurs Utilisateurs
+              </label>
+            </div>
+            <div className="champ">
+              <input type="radio" id="autre" name="entrantes" />
+              <label>Autre</label>
+            </div>
+          </fieldset>
+
           <div className="input">
-            <button>Etape suivante →</button>
+            <button>Commencer</button>
           </div>
         </div>
       </div>
