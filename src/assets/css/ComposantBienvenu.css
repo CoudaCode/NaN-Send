@@ -48,7 +48,7 @@
     width: 170px;
     font-size: 12px;
     position: relative;
-    background-color: transparent;
+    background-color: var(--ma--couleur--text);
     cursor: pointer;
     border: 2px solid var(--ma-couleur-bouton);
     overflow: hidden;
@@ -60,7 +60,7 @@
     color: var(--ma-couleur-bouton);
   }
   .ComposantBienvenu .button:hover .btnblanche {
-    color: var(--ma--couleur--text);
+    color: var(--ma-couleur-bouton);
   }
 
   .ComposantBienvenu .btn-txt {
