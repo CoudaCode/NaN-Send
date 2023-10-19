@@ -1,7 +1,7 @@
 // import { useRef } from "react";
 // import "./../assets/css/Navbar.css";
 // import { Link } from "react-router-dom";
-// import { BiSolidMessageRoundedDots } from "react-icons/bi";
+import { BiSolidMessageRoundedDots } from "react-icons/bi";
 // import { TfiMenuAlt } from "react-icons/tfi";
 // import { RiEyeCloseLine } from "react-icons/ri";
 
@@ -130,13 +130,12 @@ function Navbar() {
 
   return (
     <header className="main-header">
-      <div className="container-fluid">
+      <div className="container-fluid maNav">
         <nav className="navbar navbar-expand-lg main-nav">
-          <a className="navbar-brand" href="/mojo">
-            <img
-              src="http://rajeshdas.com/assets/images/logo.svg"
-              alt="rajeshdas.com"
-            />
+          <a href="#" className="logo">
+          <span className="log-msg">{<BiSolidMessageRoundedDots/>}</span>
+            <span className="log1">NaN-</span>
+            <span className="log2">SEND</span>
           </a>
           <button
             className="navbar-toggler"
@@ -151,33 +150,30 @@ function Navbar() {
             <span className="icon-bar icon-bar-3"></span>
           </button>
           <div
-            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+            className={`collapse justify-content-center navbar-collapse ${
+              isMenuOpen ? "show" : ""
+            }`}
             id="mainMenu"
           >
-            <ul className="navbar-nav ml-auto text-uppercase f1">
+            <ul className="navbar-nav ms-5 text-uppercase f1">
               <li>
                 <a href="#home" className="active active-first">
-                  home
+                  Accueil
                 </a>
               </li>
               <li>
-                <a href="#about">about us</a>
+                <a href="#about">À propos</a>
               </li>
               <li>
-                <a href="#service">services</a>
+                <a href="#service">Services</a>
               </li>
               <li>
-                <a href="#project">projects</a>
+                <a href="#service">Prix</a>
               </li>
               <li>
-                <a href="#team">team</a>
+                <a href="#project">Contact</a>
               </li>
-              <li>
-                <a href="#testimony">testimonils</a>
-              </li>
-              <li>
-                <a href="#contact">contact</a>
-              </li>
+              
             </ul>
           </div>
         </nav>

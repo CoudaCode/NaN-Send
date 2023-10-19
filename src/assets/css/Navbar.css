@@ -5,19 +5,40 @@
   position: relative;
   z-index: 999;
 }
+.maNav {
+  box-shadow: 1px 1px 1px 1px var(--ma-couleur-bouton);
+  padding: 0.3rem;
+}
+.maNav .logo {
+  margin-left: 12rem;
+  text-decoration: none;
+}
+.maNav .logo .log-msg {
+  font-size: 2rem;
+  color: var(--ma-couleur-bouton);
+}
+.maNav .logo .log1 {
+  color: var(--ma--couleur--text);
+  font-size: 1.8rem;
+}
+.maNav .logo .log2 {
+  color: var(--ma-couleur-bouton);
+  font-size: 1.8rem;
+}
 
 #mainMenu li > a {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #fff;
+  color: var(--ma--couleur--text);
   font-weight: 400;
   position: relative;
   z-index: 1;
   text-decoration: none;
 }
-
-.main-header.fixed-nav #mainMenu li > a {
-  color: #fff;
+#mainMenu li > a:hover {
+  color: var(--ma-couleur-bouton);
+}
+.Navbar .collapse .main-header.fixed-nav #mainMenu li > a {
   text-decoration: none;
 }
 
@@ -29,8 +50,8 @@
   position: absolute;
   content: "";
   width: calc(100% - 1px);
-  height: 1px;
-  background: #fff;
+  height: 2px;
+  background: var(--ma-couleur-bouton);
   bottom: -6px;
   left: 0;
   transform: scale(0, 1);
@@ -52,7 +73,7 @@
 .main-header {
   position: fixed;
   left: 0;
-  padding:0;
+  padding: 0;
   z-index: 99;
   width: 100%;
   transition: all 0.4s ease;
@@ -77,10 +98,10 @@
   color: #fff;
 }
 
-.main-header .navbar-brand img {
-  max-width: 40px;
-  animation: fadeInLeft 0.4s both 0.4s;
-}
+/* .navbar {
+  border: 1px solid red;
+  width: 100%;
+} */
 /* main-header end */
 /* Mobile view styles (continued) */
 @media (max-width: 991px) {
@@ -88,14 +109,11 @@
   .collapse.in {
     display: block !important;
     padding: 0;
-    background-color: red;
     clear: both;
   }
 
   .navbar-toggler {
     margin: 0;
-
-    background-color: red;
     padding: 0;
     width: 40px;
     height: 40px;
