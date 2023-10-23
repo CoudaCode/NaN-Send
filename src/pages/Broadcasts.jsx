@@ -10,7 +10,9 @@ function Broadcasts() {
       <div className="container-fluid mt-4">
         <div className="row flex-nowrap">
           <SideBar />
-          <div className="col py-3 cardRassemblement"></div>
+          <div className="col py-3 cardRassemblement">
+              
+          </div>
         </div>
       </div>
     </div>
