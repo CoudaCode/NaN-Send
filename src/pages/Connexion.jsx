@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./../assets/css/Connexion.css";
 import google from "./../assets/images/goog.png";
 

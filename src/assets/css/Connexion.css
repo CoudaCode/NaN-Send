@@ -4,14 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .Connexion form {
-  width: 30%;
-  border: 1px solid #6870e0;
-  height: 58vh;
   font-family: sans-serif;
   border-radius: 20px;
+  height: 52vh;
   box-shadow: 2px 5px 7px 2px#6870e0;
+  overflow: hidden;
 }
 
 .Connexion .text {
@@ -88,4 +88,65 @@
   background-color: grey;
 }
 
-/*formulaire inscription*/
+@media screen and (max-width: 1024px) {
+  .Connexion form {
+    width: 31%;
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  .Connexion .text {
+    width: 60%;
+    font-size: 24px;
+  }
+  .Connexion .google {
+    font-size: 8px;
+    height: 20px;
+  }
+
+  .Connexion .text {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 1023px) {
+  .Connexion form {
+    width: 90%;
+    height: 30vh;
+  }
+  .Connexion {
+    font-size: 8px;
+    padding: 0;
+  }
+  .Connexion .google {
+    font-size: 8px;
+    height: 20px;
+  }
+
+  .Connexion .text {
+    font-size: 6px;
+  }
+}
+/*Smartphone*/
+
+@media screen and (max-width: 767px) {
+  .Connexion {
+    font-size: 8px;
+    padding: 0;
+  }
+
+  .Connexion form {
+    width: 90%;
+    height: 30vh;
+  }
+  .Connexion .google {
+    font-size: 8px;
+    height: 20px;
+  }
+
+  .Connexion .text {
+    font-size: 6px;
+  }
+
+  /* Ajoutez d'autres styles spécifiques pour les smartphones si nécessaire */
+}
