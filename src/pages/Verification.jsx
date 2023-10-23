@@ -46,40 +46,107 @@ function Verification() {
               </li>
             </ul>
           </div>
-          <fieldset>
-            <legend>
-              Quels es votre ojectiifs principals en utilisant NaN Send{" "}
-            </legend>
 
-            <div className="champ">
-              <input type="radio" id="entrantes" name="entrantes" />
-              <label htmlFor="entrantes">
+          <fieldset>
+            <p style={{ color: "#333" }}>
+              Quels es votre ojectiifs principals en utilisant NaN Send?{" "}
+            </p>
+            <legend className="sr-only">Countries</legend>
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-1"
+                type="radio"
+                name="countries"
+                value="USA"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-1"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Gerer les conversations entrantes
               </label>
             </div>
-            <div className="champ">
-              <input type="radio" id="diffusion" name="entrantes" />
-              <label>Diffusion WathsApp</label>
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-2"
+                type="radio"
+                name="countries"
+                value="Germany"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-2"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Diffusion WathsApp
+              </label>
             </div>
-            <div className="champ">
-              <input type="radio" id="annonces" name="entrantes" />
-              <label htmlFor="annonces">Annonces Click-to Chat</label>
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-3"
+                type="radio"
+                name="countries"
+                value="Spain"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-3"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Annonces Click-to Chat
+              </label>
             </div>
-            <div className="champ">
-              <input type="radio" id="Professionnels" name="entrantes" />
-              <label htmlFor="Professionnels">
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-4"
+                type="radio"
+                name="countries"
+                value="United Kingdom"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-4"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Envoyer des Campagnes Professionnels
               </label>
             </div>
-            <div className="champ">
-              <input type="radio" id="business" name="entrantes" />
-              <label htmlFor="business">
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-4"
+                type="radio"
+                name="countries"
+                value="United Kingdom"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-4"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 WathsApp Business Plusieurs Utilisateurs
               </label>
             </div>
-            <div className="champ">
-              <input type="radio" id="autre" name="entrantes" />
-              <label>Autre</label>
+
+            <div className="flex items-center mb-4">
+              <input
+                id="country-option-4"
+                type="radio"
+                name="countries"
+                value="United Kingdom"
+                className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="country-option-4"
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Autre
+              </label>
             </div>
           </fieldset>
 

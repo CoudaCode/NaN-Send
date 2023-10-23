@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./../assets/css/Footer.css";
 import imgLogo from "./../assets/images/log.png";
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Acceuil from "./pages/Acceuil";
@@ -13,6 +12,7 @@ import FormInscription from "./pages/FormInscription";
 import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";
+
 function App() {
   return (
     <>
@@ -29,6 +29,7 @@ function App() {
         <Route path="/workspace" element={<WorkSpace />} />
         <Route path="/verification" element={<Verification />} />
         <Route path="/formulaire" element={<FormInscription />} />
+       
       </Routes>
     </>
   );

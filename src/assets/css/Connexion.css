@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 .Connexion form {
+  width: 30%;
   font-family: sans-serif;
   border-radius: 20px;
   height: 52vh;
@@ -86,67 +87,4 @@
   width: 100%;
   height: 1px;
   background-color: grey;
-}
-
-@media screen and (max-width: 1024px) {
-  .Connexion form {
-    width: 31%;
-    height: 30vh;
-    overflow: hidden;
-  }
-
-  .Connexion .text {
-    width: 60%;
-    font-size: 24px;
-  }
-  .Connexion .google {
-    font-size: 8px;
-    height: 20px;
-  }
-
-  .Connexion .text {
-    font-size: 6px;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-width: 1023px) {
-  .Connexion form {
-    width: 90%;
-    height: 30vh;
-  }
-  .Connexion {
-    font-size: 8px;
-    padding: 0;
-  }
-  .Connexion .google {
-    font-size: 8px;
-    height: 20px;
-  }
-
-  .Connexion .text {
-    font-size: 6px;
-  }
-}
-/*Smartphone*/
-
-@media screen and (max-width: 767px) {
-  .Connexion {
-    font-size: 8px;
-    padding: 0;
-  }
-
-  .Connexion form {
-    width: 90%;
-    height: 30vh;
-  }
-  .Connexion .google {
-    font-size: 8px;
-    height: 20px;
-  }
-
-  .Connexion .text {
-    font-size: 6px;
-  }
-
-  /* Ajoutez d'autres styles spécifiques pour les smartphones si nécessaire */
 }
