@@ -12,13 +12,14 @@ function Broadcasts() {
         <div className="row flex-nowrap">
           <SideBar />
           <div className="col py-3 cardRassemblement">
-            <div className="addBouton">
-              <button class="py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75">
-                <i className="fas fa-plus"></i>
-                créer une diffusion
-              </button>
+            {/* <div className="addBouton flex">
+              <div className="btn w-1/2">
+                <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold sm:py-1 sm:px-1 py-2 px-4 rounded">
+                  Ajouter un message
+                </button>
+              </div>
 
-              <div className="chanal">
+              <div className="chanal w-1/2">
                 <img
                   className="inline-block h-12 w-12 rounded-full "
                   src={whatsapp}
@@ -29,7 +30,6 @@ function Broadcasts() {
                   src={message}
                   alt=""
                 />
-
                 <img
                   className="inline-block h-12 w-12 rounded-full "
                   src={gmail}
@@ -37,7 +37,7 @@ function Broadcasts() {
                 />
               </div>
             </div>
-            <div className="max-w-screen-xl mx-auto p-5">
+            <div className="max-w-screen-xl mx-auto p-5 sm:px-2">
               <div className="overflow-x-auto">
                 <table className="min-w-full border bg-white text-black border-gray-300">
                   <thead>
@@ -78,6 +78,13 @@ function Broadcasts() {
                   Suivant
                 </button>
               </div>
+            </div> */}
+
+            <div className="container flex">
+              <div className="elemne1 w-1/2 sm:w-full md:w-1/2 lg:w-1/2 bg-slate-500">elemen1</div>
+              <div className="elemne2 w-1/2 sm:w-full md:w-1/2 lg:w-1/2 bg-red-500">elemen2</div>
+              <div className="elemne3 w-1/2 sm:w-full md:w-1/2 lg:w-1/2 bg-yellow-500">elemen3</div>
+              <div className="elemne4 w-1/2 sm:w-full md:w-1/2 lg:w-1/2 bg-green-500">elemen4</div>
             </div>
           </div>
         </div>
