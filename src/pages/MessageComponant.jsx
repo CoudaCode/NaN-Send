@@ -12,7 +12,7 @@ function MessageComponant() {
           <SideBar />
           <div className="col  cardRassemblement">
             <div className="flex justify-evenly">
-              <div className="container mx-auto text-center">
+              <div className="container-lg mx-auto  text-center">
                 <div className="flex justify-around mb-8">
                   <button className=" inline-flex items-center py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-300 focus:outline-none focus:ring-2 focus:bg-purple-200 focus:ring-opacity-75">
                     <svg
@@ -118,44 +118,57 @@ function MessageComponant() {
                   </div>
                 </div>
                 <div className="flex ">
-                  <div className="blocMessage bg-white max-w-sm rounded overflow-hidden shadow-lg py-3 px-3">
-                  <form className="w-full max-w-sm">
-                    <div className="md:flex md:items-center mb-6">
-                      <div className="md:w-1/4">
-                        <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
-                         Objet
-                        </label>
-                      </div>
-                      <div className="md:w-3/4">
-                        <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text"  />
-                      </div>
-                    </div>
-                    <div className="flex items-center mb-6 ">
-                        <div className="md:w-4/4 flex-1 items-center">
-                          <textarea rows="10" className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Message" > </textarea>
+                  <div className="blocMessage flex flex-wrap bg-white  w-100 rounded overflow-hidden shadow-lg py-3 px-3">
+                    <form className="w-full max-w-sm mr-4">
+                        <div className="md:flex md:items-center mb-6">
+                          <div className="md:w-1/4">
+                            <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+                            Objet
+                            </label>
+                          </div>
+                          <div className="md:w-3/4">
+                            <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text"  />
+                          </div>
                         </div>
+                        <div className="flex items-center mb-6 ">
+                            <div className="md:w-4/4 flex-1 items-center">
+                              <textarea rows="10" className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Message" > </textarea>
+                            </div>
+                        </div>
+                        <div className="md:flex md:items-center">
+                          <div className="md:w-3/4">
+                            <button className="text-gray-900 bg-purple-500 bg-white hover:bg-purple-300 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-purple-500 mr-2 mb-2" type="button">
+                                
+                                Selectionner le canal d'envoi
+                            </button>
+                          </div>
+                          <div className="md:w-2/4">
+                            <button className=" inline-flex items-center py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-300 focus:outline-none focus:ring-2 focus:bg-purple-200 focus:ring-opacity-75">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31" viewBox="0 0 26 31" fill="none">
+                                  <path d="M22.3398 0.39206L1.21645 14.9174C-0.530292 16.1223 -0.362727 19.2042 1.50588 20.1184L7.30973 22.9823V28.0925C7.30973 30.9019 10.3157 32.0584 11.707 29.8242L13.9311 26.2458L19.6131 29.0431C19.9127 29.1884 20.2275 29.2611 20.5423 29.2611C20.9587 29.2611 21.37 29.1339 21.7406 28.8857C22.3906 28.4498 22.8374 27.6748 22.9542 26.7968L25.9704 3.35283C26.2801 0.924878 24.0967 -0.812835 22.3398 0.39206ZM9.74704 28.0925V24.1812L11.6055 25.0954L9.74704 28.0925ZM20.5423 26.3548L12.7327 22.51L19.8517 10.2613C20.395 9.32281 19.3693 8.23296 18.6483 8.97769L7.9089 20.1366L2.4351 17.4362L23.5585 2.90478L20.5423 26.3548Z" fill="white"/>
+                                </svg>
+                                Envoyer
+                            </button>
+                          </div>
+                        </div>
+                    </form>
+                      <div className=" flex items-center justify-center block max-w-sm rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                      <form >
+                        <div className="relative mb-6 border-2 flex items-center bg-purple-500 justify-center" data-te-input-wrapper-init>
+                          <input
+                            type="file"
+                            className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleInput90"
+                            placeholder="Name" />
+                        
+                        </div>
+                      </form>
                     </div>
-                    <div className="md:flex md:items-center">
-                      <div className="md:w-3/4">
-                        <button className="text-gray-900 bg-purple-500 bg-white hover:bg-purple-300 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-purple-500 mr-2 mb-2" type="button">
-                            
-                            Selectionner le canal d'envoi
-                        </button>
-                      </div>
-                      <div className="md:w-2/4">
-                        <button className=" inline-flex items-center py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-300 focus:outline-none focus:ring-2 focus:bg-purple-200 focus:ring-opacity-75">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31" viewBox="0 0 26 31" fill="none">
-                              <path d="M22.3398 0.39206L1.21645 14.9174C-0.530292 16.1223 -0.362727 19.2042 1.50588 20.1184L7.30973 22.9823V28.0925C7.30973 30.9019 10.3157 32.0584 11.707 29.8242L13.9311 26.2458L19.6131 29.0431C19.9127 29.1884 20.2275 29.2611 20.5423 29.2611C20.9587 29.2611 21.37 29.1339 21.7406 28.8857C22.3906 28.4498 22.8374 27.6748 22.9542 26.7968L25.9704 3.35283C26.2801 0.924878 24.0967 -0.812835 22.3398 0.39206ZM9.74704 28.0925V24.1812L11.6055 25.0954L9.74704 28.0925ZM20.5423 26.3548L12.7327 22.51L19.8517 10.2613C20.395 9.32281 19.3693 8.23296 18.6483 8.97769L7.9089 20.1366L2.4351 17.4362L23.5585 2.90478L20.5423 26.3548Z" fill="white"/>
-                            </svg>
-                            Envoyer
-                        </button>
-                      </div>
-                    </div>
-                  </form>
                   </div>
+
                 </div>
               </div>
-              <div className="container mx-auto">
+              <div className="container mx-auto bg-white">
 
               </div>
             </div>
