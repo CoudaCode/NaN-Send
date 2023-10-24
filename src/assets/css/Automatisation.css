@@ -355,6 +355,12 @@
   }
 } */
 
+@media screen and (max-width: 1075px) {
+  .Automatisation .flex{
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 1318px) {
   .Automatisation .flex {
   flex-wrap: wrap;
