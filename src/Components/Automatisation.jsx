@@ -225,11 +225,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
@@ -261,11 +263,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
@@ -297,11 +301,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
@@ -335,11 +341,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
@@ -371,11 +379,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
@@ -408,11 +418,13 @@ function Automatisation() {
                         </div>
                         <div className="look">
                           <p>Marie Kossiwa Mariam</p>
+                          <div className="loop">
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
                           <AiFillStar className="ico" />
+                          </div>
                         </div>
                       </div>
 
