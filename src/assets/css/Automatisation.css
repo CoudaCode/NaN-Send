@@ -311,6 +311,17 @@
   .Automatisation .colore{
     height: 95vh;
   }
+
+  .Automatisation .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .Automatisation .boton{
+    grid-template-columns: repeat(6, 0fr);
+  }
 }
 
 /*@media screen and (max-width: 1323px) {
