@@ -44,6 +44,7 @@ function Automatisation() {
             </div>
 
             <div className="flex">
+              <div className="scrollbar">
               <div className="flex1">
                 <p>
                   Conversation <br /> debut
@@ -124,6 +125,7 @@ function Automatisation() {
                     <AiOutlineCheck className="icon" />
                   </div>
                 </div>
+              </div>
               </div>
 
               <div className="chat">
