@@ -319,8 +319,13 @@
 }
 
 @media screen and (max-width: 1075px) {
+
+  .Automatisation .colore{
+    height: 150vh;
+  }
   .Automatisation .boton{
-    grid-template-columns: repeat(6, 0fr);
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
   }
 }
 
