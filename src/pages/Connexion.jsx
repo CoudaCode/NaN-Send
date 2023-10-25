@@ -1,57 +1,77 @@
 import "./../assets/css/Connexion.css";
+import google from "./../assets/images/goog.png";
 
 function Connexion() {
   return (
     <div className="Connexion">
-      <form className="w-full max-w-sm">
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
-            <label
-              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-              htmlFor="inline-full-name"
-            >
-              Adress Email
-            </label>
-          </div>
-          <div className="md:w-2/3">
+      <form>
+        <h3>Foumulaire de Connexion</h3>
+        <button className="google">
+          <img src={google} alt="" />
+          <p>S&apos;incrire avec votre compte Coogle</p>
+        </button>
+        <div className="content__or-text">
+          <span></span>
+          <span>Ou</span>
+          <span></span>
+        </div>
+        <div className="labInp">
+          <div className="mb-6">
+            <label htmlFor="email">Adress Email</label>
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-              id="inline-full-name"
-              type="text"
+              type="email"
+              id="email"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
             />
           </div>
-        </div>
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
+          <div className="mb-6">
             <label
-              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-              htmlFor="inline-password"
+              htmlFor="password"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Mot de Passe
+              Mot de passe
             </label>
-          </div>
-          <div className="md:w-2/3">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-              id="inline-password"
               type="password"
-              placeholder="******************"
+              id="password"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="**********"
+              required
             />
           </div>
         </div>
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3"></div>
-          <div className="md:w-2/3">
-            <button
-              className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-              type="button"
-            >
-              connexion
-            </button>
-          </div>
+        <div className="flex justify-center">
+          <button className=" text-white py-3 px-2 mt-2 rounded items-center m-10">
+            Connexion
+          </button>
         </div>
       </form>
     </div>
+    // <div className="Connexion">
+    //     <div
+    //       className="h-screen flex flex-colitems-center justify-center">
+    //       <p className="text-green-700 text-xl mb-3">Welcome to GeeksforGeeks</p>
+    //       <form>
+    //         <input
+    //           aria-label="Enter your email address"
+    //           type="text"
+    //           placeholder="Email address"
+    //           className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-200 rounded mb-2"/>
+    //         <input
+    //           aria-label="Enter your password"
+    //           type="password"
+    //           placeholder="Password"
+    //           className="text-sm text-gray-base w-full mr-3
+    //                               py-5 px-4 h-2 border border-gray-200
+    //                               rounded mb-2"
+    //         />
+    //         <button type="submit" className="bg-green-400 w-full mt-4">
+    //           Login
+    //         </button>
+    //       </form>
+    //     </div>
+    //   </div>
   );
 }
 export default Connexion;

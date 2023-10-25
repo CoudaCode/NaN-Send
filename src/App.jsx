@@ -12,7 +12,7 @@ import FormInscription from "./pages/FormInscription";
 import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";
-
+import Connect from "./pages/connect";
 function App() {
   return (
     <>
@@ -29,7 +29,7 @@ function App() {
         <Route path="/workspace" element={<WorkSpace />} />
         <Route path="/verification" element={<Verification />} />
         <Route path="/formulaire" element={<FormInscription />} />
-       
+        <Route path="/connect" element={<Connect />} />
       </Routes>
     </>
   );
