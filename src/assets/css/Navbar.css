@@ -9,6 +9,33 @@
   box-shadow: 1px 1px 1px 1px var(--ma-couleur-bouton);
   padding: 0.3rem;
 }
+.scrolled {
+  background-color: var(--ma-couleur-bouton);
+}
+.scrolled li a:hover{
+  color:var(--ma--couleur--text) !important;
+}
+.scrolled #mainMenu li > a::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 1px);
+  height: 2px;
+  background: var(--ma--couleur--text);
+  bottom: -6px;
+  left: 0;
+  transform: scale(0, 1);
+  transform-origin: right center;
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+.scrolled .maNav .logo .log-msg {
+  color: var(--ma-couleur-principale) !important;
+}
+
+.scrolled .maNav .log2 {
+  color: var(--ma-couleur-principale) !important;
+}
+
 .maNav .logo {
   margin-left: 12rem;
   text-decoration: none;
@@ -86,23 +113,11 @@
   transition: all 0.4s ease;
 }
 
-.main-header.fixed-nav .navbar-brand > img:last-of-type {
-  display: block;
-}
-
-.main-header.fixed-nav .navbar-brand > img:first-of-type {
-  display: none;
-}
 
 .navbar-brand {
   color: #fff;
 }
 
-/* .navbar {
-  border: 1px solid red;
-  width: 100%;
-} */
-/* main-header end */
 /* Mobile view styles (continued) */
 @media (max-width: 991px) {
   /* Header styles for mobile view (media query) */
@@ -161,7 +176,7 @@
 
   .main-header .navbar-toggler .icon-bar-1 {
     width: 10px;
-    top: 0px;
+    top: 0px;  
   }
 
   .main-header .navbar-toggler .icon-bar-2 {

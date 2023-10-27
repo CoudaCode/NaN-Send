@@ -16,6 +16,7 @@ import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
 import principaleimg from "../assets/images/message.jpg";
 import { Link } from "react-router-dom";
 function ComposantBienvenu() {
+  
   return (
     <div className="ComposantBienvenu">
       <div className="article">
@@ -49,13 +50,7 @@ function ComposantBienvenu() {
             </button>
           </div>
           <div className="noterBien">
-            <span className="iconValidate">
-              <GrValidate />
-            </span>
             <p>Pas de carte de crédit nécessaire</p>
-            <span className="iconValidate">
-              <GrValidate />
-            </span>
             <p>Sécurité garantie</p>
           </div>
         </div>
