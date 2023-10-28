@@ -1,15 +1,14 @@
 import "../assets/css/Profile.css";
 import Topbar from "../components/Topbar";
-import SideBar from "../components/SideBar";
+import SideBar from "../Components/SideBar";
 import { Link } from "react-router-dom";
 import person from "../assets/images/person.jpg";
-
 
 function Profile() {
   return (
     <div className="Profile">
       <Topbar />
-      <div className="container-fluid mt-4"> 
+      <div className="container-fluid mt-4">
         <div className="row flex-nowrap">
           <SideBar />
           <div className="col-md-10 py-3 cardRassemblement profilCard">

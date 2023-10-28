@@ -1,37 +1,52 @@
-import React from "react";
 import "./../assets/css/Connexion.css";
-import google from "./../assets/images/goog.png";
+import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 function Connexion() {
   return (
-    <div className="Connexion">
-      <form>
-        <div className="text">
-          <h3>Formulaire de connexion</h3>
-          <button className="google">
-            <img src={google} alt="" />
-            <p>connecter-vous avec votre compte Coogle </p>
-          </button>
-          <div className="content__or-text">
-            <span></span>
-            <span>Ou</span>
-            <span></span>
+    <>
+      <div className="Connexion">
+        <div className="container">
+          <div className="heading">Connexion</div>
+          <form action="" className="form">
+            <input
+              required=""
+              className="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Adresse Email"
+            />
+            <input
+              required=""
+              className="input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mot de Passe"
+            />
+            <span className="forgot-password">
+              <a href="#">Mot de passe oublié ?</a>
+            </span>
+            <input
+              className="login-button"
+              type="submit"
+              value="Se connecter"
+            />
+          </form>
+          <div className="social-account-container">
+            <span className="title">Ou connectez-vous avec</span>
+            <div className="social-accounts">
+              <Link>
+                <button className="social-button google">
+                  <span>{<FcGoogle />}</span>
+                </button>
+              </Link>
+            </div>
           </div>
-          <label htmlFor="email">Adresse Email</label>
-          <br />
-          <input type="text" id="email" />
-          <br />
-          <label htmlFor="mdp">Mot De Passe</label>
-          <br />
-          <input type="text" id="mdp" />
-          <br />
-          <button type="submit" className="btnconnexion">
-            Connexion
-          </button>
         </div>
-      </form>
-    </div>
+      </div>
+    </>
   );
 }
-
 export default Connexion;
