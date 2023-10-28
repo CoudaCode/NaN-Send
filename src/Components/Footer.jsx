@@ -1,4 +1,3 @@
-import React from "react";
 import "./../assets/css/Footer.css";
 import imgLogo from "./../assets/images/log.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -62,6 +61,8 @@ function Footer() {
             className="container my-3"
             style={{ border: "1.5px solid #c7caf6" }}
           />
+
+       
           <div className="container-fluid p-10 pb-0">
             <section>
               <div className="row">
