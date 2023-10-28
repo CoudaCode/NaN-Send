@@ -12,20 +12,17 @@ function SideBar() {
       <div className="d-flex flex-column align-items-center bg-white align-items-sm-start px-3 rounded-4 pt-2 text-white min-vh-60">
         <Link
           to="/"
-          className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-        >
+          className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
           <span className="fs-5 d-none d-sm-inline">Menu</span>
         </Link>
         <ul
           className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-          id="menu"
-        >
+          id="menu">
           <li className="nav-item">
             <Link
               to="/dashbord"
               id={active === "/dashbord" ? "ClickHover" : ""}
-              className="nav-link align-middle px-0"
-            >
+              className="nav-link align-middle px-0">
               <i className="fa-solid fa-border-all"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Dashboard</span>
             </Link>
@@ -41,8 +38,7 @@ function SideBar() {
               to={"/message"}
               href="#"
               className="nav-link align-middle px-0"
-              id={active === "/message" ? "ClickHover" : ""}
-            >
+              id={active === "/message" ? "ClickHover" : ""}>
               <i className="fa-solid fa-clipboard-list"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Messages</span>
             </Link>
@@ -52,8 +48,7 @@ function SideBar() {
               to={"/broadcasts"}
               href="#"
               className="nav-link align-middle px-0"
-              id={active === "/broadcasts" ? "ClickHover" : ""}
-            >
+              id={active === "/broadcasts" ? "ClickHover" : ""}>
               <i className="fa-regular fa-calendar"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Broadcasts</span>
             </Link>
@@ -62,8 +57,7 @@ function SideBar() {
             <Link
               to="/profile"
               className="nav-link align-middle px-0"
-              id={active === "/profile" ? "ClickHover" : ""}
-            >
+              id={active === "/profile" ? "ClickHover" : ""}>
               <i className="fa-regular fa-circle-user"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Profiles</span>
             </Link>
@@ -72,8 +66,7 @@ function SideBar() {
             <Link
               to="/workspace"
               className="nav-link align-middle px-0"
-              id={active === "/workspace" ? "ClickHover" : ""}
-            >
+              id={active === "/workspace" ? "ClickHover" : ""}>
               <i className="fa-solid fa-hourglass-start"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Workspace setting</span>
             </Link>
@@ -82,8 +75,7 @@ function SideBar() {
             <Link
               to="/reports"
               className="nav-link align-middle px-0"
-              id={active === "/reports" ? "ClickHover" : ""}
-            >
+              id={active === "/reports" ? "ClickHover" : ""}>
               <i className="fa-solid fa-comments"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Reports</span>
             </Link>
@@ -92,8 +84,7 @@ function SideBar() {
             <Link
               to="/"
               className="nav-link align-middle px-0"
-              id={active === "/" ? "ClickHover" : ""}
-            >
+              id={active === "/" ? "ClickHover" : ""}>
               <i className="fa-solid fa-arrow-left"></i>
               <span className="ms-1 d-none d-sm-inline">Deconnexion</span>
             </Link>
@@ -102,9 +93,8 @@ function SideBar() {
         <hr />
       </div>
       <div
-        className="dropdown position-absolute rounded-4 m-2 p-4 bg-white bottom-0 start-0"
-        id="btnBottom"
-      >
+        className="dropdown rounded-4 m-2 p-4 bg-white bottom-0 start-0"
+        id="btnBottom">
         <h5> NAN DIGITAL ACADEMY</h5>
         <h6>Version: 1.0.0.11</h6>
       </div>
