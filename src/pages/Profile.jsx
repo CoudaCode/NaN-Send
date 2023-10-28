@@ -1,6 +1,6 @@
 import "../assets/css/Profile.css";
 import Topbar from "../components/Topbar";
-import SideBar from "../components/SideBar";
+import SideBar from "../Components/SideBar";
 import { Link } from "react-router-dom";
 import person from "../assets/images/person.jpg";
 
