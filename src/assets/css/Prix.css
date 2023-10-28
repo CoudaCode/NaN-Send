@@ -1,11 +1,202 @@
 .Prix{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 55rem;
     background-color: #F2F2F2;
     padding: 50px 0;
+    justify-content: space-around;
+}
+.Prix .container-card{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-prix1{
+    width: 18rem;
+    height: 25rem;
+    background-color: var(--ma--couleur--text);
+    border-radius: 15px;
+    box-shadow: var( --mon--autre--couleur) 0px 50px 100px -20px,var( --mon--autre--couleur) 0px 30px 60px -30px, var( --mon--autre--couleur) 0px -2px 6px 0px inset;
+}
+.card-prix1:hover{
+    border-bottom: 2px solid var(--ma-couleur-bouton);
+    transform: scale(1.1);
+}
+.card-prix2{
+    width: 18rem;
+    height: 25rem;
+    background-color: var(--ma--couleur--text);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card-prix2:hover{
+    border-bottom: 2px solid var(--ma-couleur-principale);
+    transform: scale(1.1);
+}
+.card-prix3{
+    width: 18rem;
+    height: 25rem;
+    background-color:var( --ma--couleur--text) ;
+    border-radius: 15px;
+    box-shadow: var(--mon--autre--couleur) 0px 50px 100px -20px, var(--mon--autre--couleur) 0px 30px 60px -30px, var(--mon--autre--couleur) 0px -2px 6px 0px inset;
+}
+.card-prix3:hover{
+    border-bottom: 2px solid var(--ma-couleur-bouton);
+    transform: scale(1.1);
+}
+.card-prix1 .entete-card{
+    background-color: var( --ma-couleur-bouton);
+    width: 100%;
+    height: 5rem;
+    border-radius: 15px;
+}
+.card-prix2 .entete-card{
+    background-color: var(--ma-couleur-principale);;
+    width: 100%;
+    height: 5rem;
+    border-radius: 15px;
+}
+.card-prix3 .entete-card{
+    background-color:var(--mon--autre--couleur) ;
+    width: 100%;
+    height: 5rem;
+    border-radius: 15px;
+}
+.entete-card h4{
+    text-align: center;
+    padding-top: 1.2rem;
+}
+.card-prix1 .triangle-down {
+    width: 5px;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid var( --ma-couleur-bouton);
+    margin: auto;
+}
+.card-prix2 .triangle-down {
+    width: 5px;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid var(--ma-couleur-principale);;
+    margin: auto;
+}
+.card-prix3 .triangle-down {
+    width: 5px;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid var(--mon--autre--couleur);
+    margin: auto;
+}
+.card-prix-trait{
+    width: 40%;
+    height: 2px;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    background-color: var(--ma-couleur-bouton);
+}
+.card-prix-check{
+    font-size: 1.8rem;
+    color: green;
+}
+.card-prix-cross{
+    font-size: 1.2rem;
+    color: red;
+}
+.prix-text{
+    color: var(--ma-couleur-principale);
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+.container-symbole{
+    margin-left: 2rem;
+}
+.container-symbole-red{
+    margin-left: 2.2rem;
+    margin-top: .7rem;
+}
+.container-symbole-red .prix-text{
+    margin-left: 14px;
+}
+.card-price{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-prix1 .price{
+    color: var(--ma-couleur-bouton);
+    font-size: 1.6rem;
+}
+.card-prix2 .price{
+    color: var(--ma-couleur-principale);
+    font-size: 1.6rem;
+}
+.card-prix3 .price{
+    color: var(--mon--autre--couleur);
+    font-size: 1.6rem;
+}
+@media(max-width:720px){
+    .Prix .container-card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-prix1{
+        width: 15rem;
+        height: 25rem;
+        background-color: var(--ma--couleur--text);
+        border-radius: 15px;
+        box-shadow: var( --mon--autre--couleur) 0px 50px 100px -20px,var( --mon--autre--couleur) 0px 30px 60px -30px, var( --mon--autre--couleur) 0px -2px 6px 0px inset;
+    }
+    .card-prix2{
+        width: 15rem;
+        height: 25rem;
+        background-color: var(--ma--couleur--text);
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .card-prix3{
+        width: 15rem;
+        height: 25rem;
+        background-color:var( --ma--couleur--text) ;
+        border-radius: 15px;
+        box-shadow: var(--mon--autre--couleur) 0px 50px 100px -20px, var(--mon--autre--couleur) 0px 30px 60px -30px, var(--mon--autre--couleur) 0px -2px 6px 0px inset;
+    }
+}
+@media(max-width:480px){
+    .Prix{
+        width: 100%;
+        height: 85rem;
+    }
+    .Prix .container-card{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-prix1{
+        width: 20rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    .card-prix2{
+        width: 20rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    .card-prix3{
+        width: 20rem;
+        height: 25rem;
+    }
 }

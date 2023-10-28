@@ -10,7 +10,7 @@ function Footer() {
             <div className="section1">
               <h1>Prêt à commencer?</h1>
               <p>
-                Libérez la puissance de NaN_Send pour faciliter <br /> vos
+                Libérez la puissance de NaN-Send pour faciliter <br /> vos
                 conversation avec vos clients.
               </p>
             </div>
@@ -47,7 +47,7 @@ function Footer() {
                     className="fa-solid fa-check"
                     style={{ marginLeft: "25px" }}
                   ></i>
-                  Avantages de NaN_Send
+                  Avantages de NaN-Send
                 </p>
                 <p>
                   <i className="fa-solid fa-check"></i>
@@ -68,7 +68,7 @@ function Footer() {
               <div className="row">
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h3>
-                    NaN_
+                    NaN-
                     <span
                       style={{
                         color: "#6870e0",

@@ -12,6 +12,7 @@ import FormInscription from "./pages/FormInscription";
 import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";
+// import Slider from "react-slick";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/workspace" element={<WorkSpace />} />
         <Route path="/verification" element={<Verification />} />
-        <Route path="/formulaire" element={<FormInscription />} />
+        <Route path="/formulaire" element={<FormInscription />} /> 
       </Routes>
     </>
   );
