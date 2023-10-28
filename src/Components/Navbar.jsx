@@ -3,7 +3,7 @@ import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import React, { useState, useEffect } from "react";
 
 import "./../assets/css/Navbar.css";
-//ok 
+//ok
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -11,36 +11,32 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
 
-  const handleScroll = (nav) =>{
-    console.log("test",nav.classList);
-    return ()=>{
+  const handleScroll = (nav) => {
+    console.log("test", nav.classList);
+    return () => {
       if (window.pageYOffset > 0) {
         nav.classList.add("scrolled");
-        
-      }else{
-        nav.classList.remove("scrolled")
+      } else {
+        nav.classList.remove("scrolled");
       }
-    } 
-
+    };
   };
 
-  useEffect(()=>{
-    const nav = document.querySelector('.maNav');
-
+  useEffect(() => {
+    const nav = document.querySelector(".maNav");
 
     window.addEventListener("scroll", handleScroll(nav));
     return () => {
-       window.removeEventListener("scroll", handleScroll(nav))
-    }
-
+      window.removeEventListener("scroll", handleScroll(nav));
+    };
   }, []);
 
   return (
     <header className="main-header">
-      <div className="container-fluid maNav" >
+      <div className="container-fluid maNav">
         <nav className="navbar navbar-expand-lg main-nav">
           <a href="#" className="logo">
-          <span className="log-msg">{<BiSolidMessageRoundedDots/>}</span>
+            <span className="log-msg">{<BiSolidMessageRoundedDots />}</span>
             <span className="log1">NaN-</span>
             <span className="log2">SEND</span>
           </a>
@@ -50,8 +46,7 @@ function Navbar() {
             onClick={toggleMenu}
             aria-controls="mainMenu"
             aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="icon-bar icon-bar-1"></span>
             <span className="icon-bar icon-bar-2"></span>
             <span className="icon-bar icon-bar-3"></span>
@@ -60,8 +55,7 @@ function Navbar() {
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
-            id="mainMenu"
-          >
+            id="mainMenu">
             <ul className="navbar-nav ms-5 text-uppercase f1">
               <li>
                 <a href="#home" className="active active-first">
@@ -80,7 +74,6 @@ function Navbar() {
               <li>
                 <a href="#project">Contact</a>
               </li>
-              
             </ul>
           </div>
         </nav>
