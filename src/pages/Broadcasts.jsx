@@ -63,11 +63,6 @@ function Broadcasts() {
   const filteredData =
     filter === "all" ? data : data.filter((item) => item.channel === filter);
   const maxPages = Math.ceil(filteredData.length / itemsPerPage);
-<<<<<<< HEAD
-  console.log(maxPages);
-=======
-
->>>>>>> fa2189cad2ec9ff1816845e17748734e1eaf37b8
   const handleChangeFilter = (event) => {
     setFilter(event.target.value);
     setCurrentPage(1);
@@ -79,91 +74,20 @@ function Broadcasts() {
     }
   };
 
-<<<<<<< HEAD
-=======
   const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
 
   const handleAddTeamClick = () => {
     setIsTeamPopupOpen(true);
   };
 
->>>>>>> fa2189cad2ec9ff1816845e17748734e1eaf37b8
   return (
     <div className='Broadcasts'>
       <Topbar />
       <div className='container-fluid mt-4'>
         <div className='row flex-nowrap'>
           <SideBar />
-<<<<<<< HEAD
           <div className='col py-3 cardRassemblement'>
             {/* <div className='addBouton flex'>
-              <div className='btn w-1/2'>
-                <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold sm:py-1 sm:px-1 py-2 px-4 rounded'>
-                  Ajouter un message
-                </button>
-              </div>
-
-              <div className='chanal w-1/2'>
-                <img
-                  className='inline-block h-12 w-12 rounded-full '
-                  src={whatsapp}
-                  alt=''
-                />
-                <img
-                  className='inline-block h-12 w-12 rounded-full '
-                  src={message}
-                  alt=''
-                />
-                <img
-                  className='inline-block h-12 w-12 rounded-full '
-                  src={gmail}
-                  alt=''
-                />
-              </div>
-            </div>
-            <div className='max-w-screen-xl mx-auto p-5 sm:px-2'>
-              <div className='overflow-x-auto'>
-                <table className='min-w-full border bg-white text-black border-gray-300'>
-                  <thead>
-                    <tr>
-                      <th className='p-3'>ID</th>
-                      <th className='p-3'>Nom</th>
-                      <th className='p-3'>Email</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className='p-3'>1</td>
-                      <td className='p-3'>John Doe</td>
-                      <td className='p-3'>john@example.com</td>
-                      <td>
-                        <button></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='p-3'>2</td>
-                      <td className='p-3'>Jane Smith</td>
-                      <td className='p-3'>jane@example.com</td>
-                    </tr>
-                    <tr>
-                      <td className='p-3'>2</td>
-                      <td className='p-3'>Jane Smith</td>
-                      <td className='p-3'>jane@example.com</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className='flex justify-end mt-4'>
-                <button className='px-4 py-2 mr-1 bg-purple-500 text-white rounded hover:bg-purple-700'>
-                  Précédent
-                </button>
-                <button className='px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-700'>
-                  Suivant
-=======
-          <div className="col py-3 cardRassemblement">
-            <div className="container mx-auto p-8">
-              <div className=" w-full flex ">
                 <div className="mb-4">
                   <select
                     id="channel"
@@ -252,10 +176,8 @@ function Broadcasts() {
                       : "bg-purple-500 text-white"
                   } rounded-md ml-2`}>
                   &#8594;
->>>>>>> fa2189cad2ec9ff1816845e17748734e1eaf37b8
                 </button>
               </div>
-            </div> */}
 
             <div className='container mx-auto p-8'>
               <div className='mb-4'>
