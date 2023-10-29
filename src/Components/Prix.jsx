@@ -1,4 +1,3 @@
-import React from "react";
 import "./../assets/css/Prix.css";
 import { BsCheckLg } from 'react-icons/bs';
 import { ImCross } from 'react-icons/im';
