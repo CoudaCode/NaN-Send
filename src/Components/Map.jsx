@@ -3,7 +3,7 @@ import React from "react";
 
 function Map() {
   return (
-    <div className='container my-12 py-12 mx-auto px-4 md:px-6 lg:px-12 Map'>
+    <div className='Map container my-12 py-12 mx-auto px-4 md:px-6 lg:px-12 Map'>
       <section className='mb-20 text-gray-800'>
         <h3 className='text-3xl font-bold text-center mb-4'>
           Contactez-Nous...

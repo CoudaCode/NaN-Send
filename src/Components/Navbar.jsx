@@ -32,7 +32,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="main-header">
+    <header className="Navbar main-header">
       <div className="container-fluid maNav">
         <nav className="navbar navbar-expand-lg main-nav">
           <a href="#" className="logo">
