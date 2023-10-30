@@ -62,7 +62,7 @@
   position: relative;
 }
 
-.Automatisation .item + .item:after {
+.item + .item:after {
   content: "";
   position: absolute;
   left: 0;
@@ -76,7 +76,7 @@
 }
 
 .Automatisation .progress-count {
-  height: 76px;
+  height: 40px;
   width: 40px;
   display: flex;
   align-items: center;
@@ -102,22 +102,7 @@
   z-index: 10;
   color: transparent;
 }
-
-.Automatisation .progress-coun{
-  height: 75px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 600;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    color: transparent;
-}
-
-.Automatisation .progress-count:after {
+.Automatisation .progress-count:after{
   content: "";
   height: 60px;
   width: 66px;
@@ -142,7 +127,7 @@
   border-radius: 50%;
   z-index: -10;
 }
-.progress-count:before{
+.Automatisation .progress-count:before{
   content: "";
   height: 10px;
   width: 20px;
@@ -167,7 +152,7 @@
   transform-origin: center center;
 }
 
-.progress-coun:before{
+.Automatisation .progress-coun:before{
   content: "";
   height: 10px;
   width: 20px;
@@ -182,10 +167,10 @@
   font-size: 25px;
   color: #fff;
 }
-.Automatisation .progress-label {
+.progress-label {
   font-size: 14px;
   font-weight: 600;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .current-item .progress-count:before,
