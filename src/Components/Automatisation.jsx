@@ -71,7 +71,6 @@ function Automatisation() {
                     <ImPriceTags className='icon' />
                   </span>
                 </li>
-
                 <li className='item'>
                   <span className='progress-label'>Checkout</span>
                   <span className='progress-coun'>
@@ -106,12 +105,13 @@ function Automatisation() {
             </div>
           </div>
         </div>
-
-        {/* DEUXIEME PARTIE */}
+        Franck Olivier Kouame, [30 Oct 2023 at 16:33:03]:
+...{/* DEUXIEME PARTIE */}
 
         <div className='supervisor'>
           <div className='separe'>
-            <div className='carre'>
+
+<div className='carre'>
               <img src={img1} alt='' />
             </div>
             <div className='carre'>
@@ -146,8 +146,7 @@ function Automatisation() {
             </div>
           </div>
         </div>
-
-        {/* TROISIEME PARTIE */}
+{/* TROISIEME PARTIE */}
         <div className='send'>
           <div className='container'>
             <div className='flax'>
@@ -172,7 +171,6 @@ function Automatisation() {
                   <p>Basé sur plus de 100 avis</p>
                 </div>
               </div>
-
               <div className='cool'>
                 <div className='cara'>
                   <div className='caro'>
@@ -196,8 +194,7 @@ function Automatisation() {
                           </div>
                         </div>
                       </div>
-
-                      <div className='bout'>
+                      ...<div className='bout'>
                         <div className='search'>
                           <AiOutlinePlus />
                           <div className='recher'>
@@ -219,7 +216,7 @@ function Automatisation() {
                         La vision de NaN repose sur ce que doit être l’avenir de
                         l'Afrique francophone
                       </p>
-                      <div className='forImg'>
+<div className='forImg'>
                         <div className='photo'>
                           <img src={things} alt='' />
                         </div>
@@ -272,8 +269,7 @@ function Automatisation() {
                           </div>
                         </div>
                       </div>
-
-                      <div className='bout'>
+                      ...<div className='bout'>
                         <div className='search'>
                           <AiOutlinePlus />
                           <div className='recher'>
@@ -314,8 +310,10 @@ function Automatisation() {
                       </div>
 
                       <div className='bout'>
-                        <div className='search'>
-                          <AiOutlinePlus />
+                        <d
+
+iv className='search'>
+<AiOutlinePlus />
                           <div className='recher'>
                             <input type='text' />
                             <MdInsertEmoticon className='ic' />
