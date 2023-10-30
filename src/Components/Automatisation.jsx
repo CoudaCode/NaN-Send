@@ -3,14 +3,12 @@ import "./../assets/css/Automatisation.css";
 import { RxHamburgerMenu, RxTarget } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiTimeFive, BiMicrophone } from "react-icons/bi";
-import {
-  AiOutlineCheck,
-  AiFillStar,
-  AiOutlineStar,
-  AiOutlinePlus,
-  AiOutlineCamera,
-} from "react-icons/ai";
+import {AiOutlineCheck,AiOutlineStar, AiFillStar, AiOutlinePlus,AiOutlineCamera,} from "react-icons/ai";
+
 import { MdInsertEmoticon } from "react-icons/md";
+import {ImPriceTags} from "react-icons/im"
+
+
 import things from "./../assets/images/pourDashboard.jpeg";
 import img1 from "./../assets/images/Message.png";
 import img2 from "./../assets/images/callCenter.jpeg";
@@ -52,7 +50,6 @@ function Automatisation() {
                 <li className='item'>
                   <span className='progress-label'>Conversation debut</span>
                   <span className='progress-count'>
-                    <RxHamburgerMenu className='icon' />
                   </span>
                 </li>
                 <li className='item current-item'>
@@ -70,20 +67,22 @@ function Automatisation() {
                 <li className='item'>
                   <span className='progress-label'>tagget d'intérêt</span>
                   <span className='progress-counte'>
-                    <BiMicrophone className='icon' />
+                    <ImPriceTags className='icon' />
                   </span>
                 </li>
+
                 <li className='item'>
                   <span className='progress-label'>Checkout</span>
-                  <span className='progress-counte'>
-                    <RxHamburgerMenu className='icon' />
+                  <span className='progress-coun'>
+                    <BiTimeFive className='ico'/>
                   </span>
                 </li>
+
                 <li className='item'>
                   <span className='progress-label'>Conversation fermé</span>
                   <span className='progress-count'>
                     {" "}
-                    <RxHamburgerMenu className='icon' />
+                    <AiOutlineCheck className='icon' />
                   </span>
                 </li>
               </ul>
