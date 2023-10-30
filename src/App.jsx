@@ -13,11 +13,19 @@ import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";
 import Slider from "react-slick";
+import { useRef } from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+
+
 
 function App() {
+  let client =  useRef(new QueryClient());
+
   return (
     <>
-      <Routes>
+    <QueryClientProvider client={client.current}> 
+    <Routes>
         <Route path="/" element={<Acceuil />} />
         <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/broadcasts" element={<Broadcasts />} />
@@ -31,6 +39,8 @@ function App() {
         <Route path="/verification" element={<Verification />} />
         <Route path="/formulaire" element={<FormInscription />} /> 
       </Routes>
+    </QueryClientProvider>
+    
     </>
   );
 }

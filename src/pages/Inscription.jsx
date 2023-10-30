@@ -1,49 +1,31 @@
+import { useForm } from "react-hook-form";
 import "./../assets/css/Inscription.css";
 import { FcGoogle } from "react-icons/fc";
+import { useMutation } from "react-query";
 import { Link } from "react-router-dom";
+                                    
 
-<<<<<<< HEAD
+const {register, handleSubmit, watch ,formState:{errors}} = useForm({
+  fullname:'',
+  email:'',
+  telephone:'',
+  nationalite:'',
+  password:''
+})
 
-function Inscription() {
-  return (
-    <div className="coprs-contenaire">
-    <div className="container">
-    <div className="heading">Inscription</div>
-    <form action="" className="form">
-    <input required="" className="input" type="text" name="nom" id="nom" placeholder="Nom d'Utilisateur"/>
-      <input required="" className="input" type="email" name="email" id="email" placeholder="Adresse Email"/>
-      <input required="" className="input" type="password" name="password" id="password" placeholder="Mot de Passe"/>
-      <span className="forgot-password"><a href="#">Mot de passe oublié ?</a></span>
-      <input className="login-button" type="submit" value="S'inscrire"/>
-      
-    </form>
-    <div className="social-account-container">
-        <span className="title">Ou connectez-vous avec</span>
-        <div className="social-accounts">
-          <Link>
-          <button className="social-button google">
-            <span>{<FcGoogle/>}</span>
-          </button>
-          </Link>
-
-        </div>
-      </div>
-  </div>
-  </div>
-=======
 function Inscription() {
   return (
     <div className="Inscription">
       <div className="container">
         <div className="heading">Inscription</div>
-        <form action="" className="form">
+        <form action=""   className="form" onSubmit={handleSubmit(onSubmit)}>
           <input
             required=""
             className="input"
             type="text"
-            name="nom"
+            name="fullname"
             id="nom"
-            placeholder="Nom d'Utilisateur"
+            placeholder="Votre nom et Prénom"
           />
           <input
             required=""
@@ -52,6 +34,22 @@ function Inscription() {
             name="email"
             id="email"
             placeholder="Adresse Email"
+          />
+          <input
+            required=""
+            className="input"
+            type="number"
+            name="tel"
+            id="tel"
+            placeholder="Téléphone"
+          />
+            <input
+            required=""
+            className="input"
+            type="text"
+            name="nationalite"
+            id="nationalite"
+            placeholder="Votre nationalité"
           />
           <input
             required=""
@@ -78,7 +76,6 @@ function Inscription() {
         </div>
       </div>
     </div>
->>>>>>> fa2189cad2ec9ff1816845e17748734e1eaf37b8
   );
 }
 

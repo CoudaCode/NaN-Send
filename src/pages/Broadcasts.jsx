@@ -87,7 +87,7 @@ function Broadcasts() {
         <div className='row flex-nowrap'>
           <SideBar />
           <div className='col py-3 cardRassemblement'>
-            {/* <div className='addBouton flex'>
+             <div className='addBouton flex'>
                 <div className="mb-4">
                   <select
                     id="channel"
