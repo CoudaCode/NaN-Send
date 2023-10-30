@@ -5,6 +5,8 @@ import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
+import Popup from "../Components/Popup"; // Importez le composant de popup ici
+
 function Broadcasts() {
   const data = [
     { id: 1, name: "John Doe", channel: "Email", members: 25 },
@@ -61,7 +63,6 @@ function Broadcasts() {
   const filteredData =
     filter === "all" ? data : data.filter((item) => item.channel === filter);
   const maxPages = Math.ceil(filteredData.length / itemsPerPage);
-  console.log(maxPages);
   const handleChangeFilter = (event) => {
     setFilter(event.target.value);
     setCurrentPage(1);
@@ -73,6 +74,12 @@ function Broadcasts() {
     }
   };
 
+  const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
+
+  const handleAddTeamClick = () => {
+    setIsTeamPopupOpen(true);
+  };
+
   return (
     <div className="Broadcasts">
       <Topbar />
@@ -81,17 +88,26 @@ function Broadcasts() {
           <SideBar />
           <div className="col py-3 cardRassemblement">
             <div className="container mx-auto p-8">
-              <div className="mb-4">
-                <select
-                  id="channel"
-                  className="p-2 rounded-md border-gray-300 text-gray-600"
-                  value={filter}
-                  onChange={handleChangeFilter}>
-                  <option value="all">Tous les canaux</option>
-                  <option value="Whatsapp">Whatsapp</option>
-                  <option value="Email">Email</option>
-                  <option value="SMS">SMS</option>
-                </select>
+              <div className=" w-full flex ">
+                <div className="mb-4">
+                  <select
+                    id="channel"
+                    className="p-2 rounded-md border-gray-300 text-gray-600"
+                    value={filter}
+                    onChange={handleChangeFilter}>
+                    <option value="all">Tous les canaux</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Email">Email</option>
+                    <option value="SMS">SMS</option>
+                  </select>
+                </div>
+                <div className="flex-grow text-right">
+                  <button
+                    onClick={handleAddTeamClick}
+                    className="bg-purple-500 text-white px-4 py-2 rounded-md mb-4">
+                    Ajouter Team
+                  </button>
+                </div>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left text-gray-500">
@@ -110,32 +126,27 @@ function Broadcasts() {
                       )
                       .map((item) => (
                         <tr key={item.id} className="border border-gray-200">
-                          <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                          <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                             {item.name}
                           </td>
                           <td className="px-6 py-4">
-                            {/* <img
-                              className="inline-block h-12 w-12 rounded-full "
-                              src={whatsapp}
-                              alt={item.channel}
-                            /> */}
                             {item.channel === "Whatsapp" && (
                               <img
-                                className="inline-block h-12 w-12 rounded-full "
+                                className="inline-block h-12 w-12 rounded-full"
                                 src={whatsapp}
                                 alt={item.channel}
                               />
                             )}
                             {item.channel === "Email" && (
                               <img
-                                className="inline-block h-12 w-12 rounded-full "
+                                className="inline-block h-12 w-12 rounded-full"
                                 src={gmail}
                                 alt={item.channel}
                               />
                             )}
                             {item.channel === "SMS" && (
                               <img
-                                className="inline-block h-12 w-12 rounded-full "
+                                className="inline-block h-12 w-12 rounded-full"
                                 src={message}
                                 alt={item.channel}
                               />
@@ -153,7 +164,7 @@ function Broadcasts() {
                   className={`px-3 py-2 ${
                     currentPage === 1
                       ? "bg-gray-200 text-gray-600"
-                      : "bg-blue-500 text-white"
+                      : "bg-purple-500 text-white"
                   } rounded-md mr-2`}>
                   &#8592;
                 </button>
@@ -163,7 +174,7 @@ function Broadcasts() {
                   className={`px-3 py-2 ${
                     currentPage === maxPages
                       ? "bg-gray-200 text-gray-600"
-                      : "bg-blue-500 text-white"
+                      : "bg-purple-500 text-white"
                   } rounded-md ml-2`}>
                   &#8594;
                 </button>
@@ -172,6 +183,11 @@ function Broadcasts() {
           </div>
         </div>
       </div>
+
+      <Popup
+        isOpen={isTeamPopupOpen}
+        onClose={() => setIsTeamPopupOpen(false)}
+      />
     </div>
   );
 }

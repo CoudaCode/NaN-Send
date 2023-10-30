@@ -1,218 +1,349 @@
-import React from "react";
+import { useState } from "react";
 import "./../assets/css/Contact.css";
-import Topbar from "./../components/Topbar";
+import Topbar from "../components/Topbar";
 import SideBar from "../Components/SideBar";
-function Contact() {
-  return (
-    <>
-      <div className="Contact">
-        <Topbar />
-        <div className="container-fluid mt-4">
-          <div className="row flex-nowrap">
-            <SideBar />
-            <div className="col py-3 cardRassemblement">
-{/*               
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <div class="flex items-center justify-between pb-4 bg-white dark:bg-gray-900">
-        <div>
-            <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
-                <span class="sr-only">Action button</span>
-                Action
-                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg>
-            </button>
-            <!-- Dropdown menu -->
-            <div id="dropdownAction" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownActionButton">
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reward</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Promote</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Activate account</a>
-                    </li>
-                </ul>
-                <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete User</a>
-                </div>
-            </div>
-        </div>
-        <label for="table-search" class="sr-only">Search</label>
-        <div class="relative">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>
-            </div>
-            <input type="text" id="table-search-users" class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for users">
-        </div>
-    </div>
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                    </div>
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Position
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Status
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Action
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
-                    <div class="pl-3">
-                        <div class="text-base font-semibold">Neil Sims</div>
-                        <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
-                    </div>  
-                </th>
-                <td class="px-6 py-4">
-                    React Developer
-                </td>
-                <td class="px-6 py-4">
-                    <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Online
-                    </div>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image">
-                    <div class="pl-3">
-                        <div class="text-base font-semibold">Bonnie Green</div>
-                        <div class="font-normal text-gray-500">bonnie@flowbite.com</div>
-                    </div>
-                </th>
-                <td class="px-6 py-4">
-                    Designer
-                </td>
-                <td class="px-6 py-4">
-                    <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Online
-                    </div>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image">
-                    <div class="pl-3">
-                        <div class="text-base font-semibold">Jese Leos</div>
-                        <div class="font-normal text-gray-500">jese@flowbite.com</div>
-                    </div>
-                </th>
-                <td class="px-6 py-4">
-                    Vue JS Developer
-                </td>
-                <td class="px-6 py-4">
-                    <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Online
-                    </div>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Jese image">
-                    <div class="pl-3">
-                        <div class="text-base font-semibold">Thomas Lean</div>
-                        <div class="font-normal text-gray-500">thomes@flowbite.com</div>
-                    </div>
-                </th>
-                <td class="px-6 py-4">
-                    UI/UX Engineer
-                </td>
-                <td class="px-6 py-4">
-                    <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Online
-                    </div>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="w-4 p-4">
-                    <div class="flex items-center">
-                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
-                    </div>
-                </td>
-                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Jese image">
-                    <div class="pl-3">
-                        <div class="text-base font-semibold">Leslie Livingston</div>
-                        <div class="font-normal text-gray-500">leslie@flowbite.com</div>
-                    </div>
-                </th>
-                <td class="px-6 py-4">
-                    SEO Specialist
-                </td>
-                <td class="px-6 py-4">
-                    <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div> Offline
-                    </div>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div> */}
+import Popup from "../Components/Popup";
 
+function Contact() {
+  const data = [
+    {
+      id: 1,
+      nom: "John",
+      prenom: "Doe",
+      email: "john.doe@example.com",
+      whatsapp: "123456789",
+      langues: "Français",
+      pays: "France",
+    },
+    {
+      id: 2,
+      nom: "Jane",
+      prenom: "Smith",
+      email: "jane.smith@example.com",
+      whatsapp: "987654321",
+      langues: "Anglais",
+      pays: "États-Unis",
+    },
+    {
+      id: 3,
+      nom: "Alice",
+      prenom: "Johnson",
+      email: "alice.johnson@example.com",
+      whatsapp: "555555555",
+      langues: "Espagnol",
+      pays: "Espagne",
+    },
+    {
+      id: 4,
+      nom: "Bob",
+      prenom: "Brown",
+      email: "bob.brown@example.com",
+      whatsapp: "777777777",
+      langues: "Allemand",
+      pays: "Allemagne",
+    },
+    {
+      id: 5,
+      nom: "Ella",
+      prenom: "White",
+      email: "ella.white@example.com",
+      whatsapp: "999999999",
+      langues: "Italien",
+      pays: "Italie",
+    },
+    {
+      id: 6,
+      nom: "David",
+      prenom: "Wilson",
+      email: "david.wilson@example.com",
+      whatsapp: "444444444",
+      langues: "Portugais",
+      pays: "Portugal",
+    },
+    {
+      id: 7,
+      nom: "Linda",
+      prenom: "Lee",
+      email: "linda.lee@example.com",
+      whatsapp: "666666666",
+      langues: "Néerlandais",
+      pays: "Pays-Bas",
+    },
+    {
+      id: 8,
+      nom: "Richard",
+      prenom: "Taylor",
+      email: "richard.taylor@example.com",
+      whatsapp: "888888888",
+      langues: "Suédois",
+      pays: "Suède",
+    },
+    {
+      id: 9,
+      nom: "Megan",
+      prenom: "Clark",
+      email: "megan.clark@example.com",
+      whatsapp: "111111111",
+      langues: "Russe",
+      pays: "Russie",
+    },
+    {
+      id: 10,
+      nom: "Michael",
+      prenom: "Evans",
+      email: "michael.evans@example.com",
+      whatsapp: "222222222",
+      langues: "Chinois",
+      pays: "Chine",
+    },
+    {
+      id: 11,
+      nom: "Sophia",
+      prenom: "Harris",
+      email: "sophia.harris@example.com",
+      whatsapp: "333333333",
+      langues: "Arabe",
+      pays: "Arabie saoudite",
+    },
+    {
+      id: 12,
+      nom: "William",
+      prenom: "King",
+      email: "william.king@example.com",
+      whatsapp: "555555555",
+      langues: "Japonais",
+      pays: "Japon",
+    },
+    {
+      id: 13,
+      nom: "Olivia",
+      prenom: "Lewis",
+      email: "olivia.lewis@example.com",
+      whatsapp: "777777777",
+      langues: "Coréen",
+      pays: "Corée du Sud",
+    },
+    {
+      id: 14,
+      nom: "James",
+      prenom: "Allen",
+      email: "james.allen@example.com",
+      whatsapp: "999999999",
+      langues: "Turc",
+      pays: "Turquie",
+    },
+    {
+      id: 15,
+      nom: "Ava",
+      prenom: "Green",
+      email: "ava.green@example.com",
+      whatsapp: "111111111",
+      langues: "Grec",
+      pays: "Grèce",
+    },
+    {
+      id: 16,
+      nom: "Benjamin",
+      prenom: "Baker",
+      email: "benjamin.baker@example.com",
+      whatsapp: "222222222",
+      langues: "Hindi",
+      pays: "Inde",
+    },
+    {
+      id: 17,
+      nom: "Emma",
+      prenom: "Adams",
+      email: "emma.adams@example.com",
+      whatsapp: "333333333",
+      langues: "Vietnamien",
+      pays: "Vietnam",
+    },
+    {
+      id: 18,
+      nom: "Henry",
+      prenom: "Turner",
+      email: "henry.turner@example.com",
+      whatsapp: "444444444",
+      langues: "Thaï",
+      pays: "Thaïlande",
+    },
+    {
+      id: 19,
+      nom: "Charlotte",
+      prenom: "Morris",
+      email: "charlotte.morris@example.com",
+      whatsapp: "666666666",
+      langues: "Allemand",
+      pays: "Allemagne",
+    },
+    {
+      id: 20,
+      nom: "Liam",
+      prenom: "Wright",
+      email: "liam.wright@example.com",
+      whatsapp: "888888888",
+      langues: "Anglais",
+      pays: "Royaume-Uni",
+    },
+  ];
+
+  const [filter, setFilter] = useState("all");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+  const [searchTerm, setSearchTerm] = useState(""); // État pour la recherche
+
+  const filteredData =
+    filter === "all" ? data : data.filter((item) => item.channel === filter);
+  const maxPages = Math.ceil(filteredData.length / itemsPerPage);
+
+  const handleChangeFilter = (event) => {
+    setFilter(event.target.value);
+    setCurrentPage(1);
+    setSearchTerm(""); // Efface le terme de recherche lorsque le filtre change.
+  };
+
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= maxPages) {
+      setCurrentPage(page);
+    }
+  };
+
+  const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
+
+  const handleAddTeamClick = () => {
+    setIsTeamPopupOpen(true);
+  };
+
+  const handleDelete = (id) => {
+    // Implémentez la logique pour supprimer l'élément avec l'ID donné
+    // Mettez à jour les données, par exemple : const newData = data.filter(item => item.id !== id);
+    // Puis, mettez à jour l'état des données
+    // setData(newData);
+  };
+  const handleEdit = (id) => {
+    // Implémentez la logique pour modifier l'élément avec l'ID donné
+    // Vous pouvez afficher un autre formulaire ou popup pour les modifications
+  };
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  return (
+    <div className='Contact'>
+      <Topbar />
+      <div className='container-fluid mt-4'>
+        <div className='row flex-nowrap'>
+          <SideBar />
+          <div className='col py-3 cardRassemblement'>
+            <div className='container mx-auto p-8'>
+              <div className='flex flex-col md:flex-row md:items-center'>
+                <div className='mb-4 md:mr-4 justify-around'>
+                  <input
+                    type='search'
+                    name='search'
+                    id='search'
+                    className='px-3 py-2 border rounded-lg focus:outline-none focus:ring text-black focus:border-blue-500 w-full md:w-64'
+                    placeholder='Rechercher par nom'
+                    value={searchTerm}
+                    onChange={handleSearch}
+                  />
+                </div>
+                <div className='flex md:mt-0 mb-4 md:space-x-2 md:justify-end'>
+                  <button
+                    // onClick={handleExportContacts}
+                    className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'>
+                    Exporter les contacts
+                  </button>
+                  <button
+                    onClick={handleAddTeamClick}
+                    className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'>
+                    Ajouter Team
+                  </button>
+                </div>
+              </div>
+
+              <div className='overflow-x-auto'>
+                <table className='w-full text-sm text-left text-gray-500'>
+                  <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
+                    <tr className='bg-white border-b'>
+                      <th className='px-6 py-3'>Nom</th>
+                      <th className='px-6 py-3'>Prénom</th>
+                      <th className='px-6 py-3'>Email</th>
+                      <th className='px-6 py-3'>WhatsApp</th>
+                      <th className='px-6 py-3'>Langues</th>
+                      <th className='px-6 py-3'>Pays</th>
+                      <th className='px-6 py-3'>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody className='bg-white border-b'>
+                    {filteredData
+                      .filter((item) =>
+                        item.nom
+                          .toLowerCase()
+                          .includes(searchTerm.toLowerCase())
+                      )
+                      .slice(
+                        (currentPage - 1) * itemsPerPage,
+                        currentPage * itemsPerPage
+                      )
+                      .map((item) => (
+                        <tr key={item.id} className='border border-gray-200'>
+                          <td className='px-6 py-4'>{item.nom}</td>
+                          <td className='px-6 py-4'>{item.prenom}</td>
+                          <td className='px-6 py-4'>{item.email}</td>
+                          <td className='px-6 py-4'>{item.whatsapp}</td>
+                          <td className='px-6 py-4'>{item.langues}</td>
+                          <td className='px-6 py-4'>{item.pays}</td>
+                          <td className='px-6 py-4'>
+                            <button
+                              className='px-2 py-1 bg-purple-500 text-white rounded-md ml-2'
+                              onClick={() => handleEdit(item.id)}>
+                              Modifier
+                            </button>
+                            <button
+                              className='px-2 md:ml-2 py-1 ml-2 bg-black text-white rounded-md'
+                              onClick={() => handleDelete(item.id)}>
+                              Supprimer
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className='mt-4 flex justify-center items-center'>
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  className={`px-3 py-2 ${
+                    currentPage === 1
+                      ? "bg-gray-200 text-gray-600"
+                      : "bg-purple-500 text-white"
+                  } rounded-md mr-2`}>
+                  &#8592;
+                </button>
+                <span className='text-lg font-medium'>{currentPage}</span>
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  className={`px-3 py-2 ${
+                    currentPage === maxPages
+                      ? "bg-gray-200 text-gray-600"
+                      : "bg-purple-500 text-white"
+                  } rounded-md ml-2`}>
+                  &#8594;
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+
+      <Popup
+        isOpen={isTeamPopupOpen}
+        onClose={() => setIsTeamPopupOpen(false)}
+      />
+    </div>
   );
 }
 

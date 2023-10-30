@@ -134,25 +134,15 @@
   transition: all 0.2s ease-in-out;
 }
 
-.Connexion
-  .social-account-container
-  .social-accounts
-  .social-button
-  .svg {
+.Connexion .social-account-container .social-accounts .social-button .svg {
   fill: white;
   margin: auto;
 }
 
-.Connexion
-  .social-account-container
-  .social-accounts
-  .social-button:hover {
+.Connexion .social-account-container .social-accounts .social-button:hover {
   transform: scale(1.2);
 }
 
-.Connexion
-  .social-account-container
-  .social-accounts
-  .social-button:active {
+.Connexion .social-account-container .social-accounts .social-button:active {
   transform: scale(0.9);
 }
