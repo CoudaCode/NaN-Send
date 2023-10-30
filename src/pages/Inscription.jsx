@@ -1,19 +1,49 @@
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 import "./../assets/css/Inscription.css";
 import { FcGoogle } from "react-icons/fc";
-import { useMutation } from "react-query";
 import { Link } from "react-router-dom";
-                                    
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom/dist";
+import Cookies from "js-cookie";
+const url = "https://nan-send-api.onrender.com";
 
-const {register, handleSubmit, watch ,formState:{errors}} = useForm({
+
+
+                                
+function Inscription() {
+  let navigate = useNavigate();
+  const {register, handleSubmit, watch ,formState:{errors}} = useForm({
   fullname:'',
   email:'',
   telephone:'',
   nationalite:'',
   password:''
 })
+const {mutate:user} = useMutation({
+  mutationFn: async (send)=>{
+      console.log("ok", send)
 
-function Inscription() {
+      let response = await axios.post(`${url}/api/user/create`,send);
+      return response;
+  },
+  onSuccess: (success)=>{
+      toast.success(success.data.message)
+      Cookies.set('token', success.data.token,{ expires: 3600*24, path: '' })
+      setTimeout(()=>{
+          navigate('/formulaire')
+      },3050)
+      },
+  onError: (e)=>{
+    toast.error(e.response.data.message)
+    // toast.errors(erro)
+      // setErrorMessage(errors.response)
+  }
+
+
+})
+let onSubmit = data=> user(data);
   return (
     <div className="Inscription">
       <div className="container">
@@ -24,7 +54,8 @@ function Inscription() {
             className="input"
             type="text"
             name="fullname"
-            id="nom"
+            id="fullname"
+            {...register("fullname",{require:true, minLength:2,maxLength:50, })}
             placeholder="Votre nom et Prénom"
           />
           <input
@@ -33,14 +64,16 @@ function Inscription() {
             type="email"
             name="email"
             id="email"
+            {...register("email",{require:true, minLength:2,maxLength:50,pattern: {value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "svp entrer un mail valide"} })}
             placeholder="Adresse Email"
           />
           <input
             required=""
             className="input"
             type="number"
-            name="tel"
-            id="tel"
+            name="telephone"
+            id="telephone"
+            {...register("telephone",{require:true, minLength:2,maxLength:50, })}
             placeholder="Téléphone"
           />
             <input
@@ -49,6 +82,7 @@ function Inscription() {
             type="text"
             name="nationalite"
             id="nationalite"
+            {...register("nationalite",{require:true, minLength:2,maxLength:50, })}
             placeholder="Votre nationalité"
           />
           <input
@@ -57,6 +91,7 @@ function Inscription() {
             type="password"
             name="password"
             id="password"
+            {...register("password",{require:true, minLength:2,maxLength:50, })}
             placeholder="Mot de Passe"
           />
           <span className="forgot-password">

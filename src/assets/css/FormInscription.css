@@ -7,12 +7,11 @@
 }
 .FormInscription .ensemble {
   width: 50%;
-  height: 78vh;
+  height: 100%;
   display: flex;
   position: relative;
   background-color: #ffff;
   padding-left: 2vw;
-  padding-top: 8vh;
 }
 
 .FormInscription .form {
@@ -67,7 +66,6 @@
 .FormInscription .cadre {
   color: white;
   margin-left: 3vw;
-  margin-top: 30px;
 }
 
 .FormInscription .cadre input,
@@ -96,7 +94,8 @@
 
 .FormInscription .cadre button {
   float: left;
-  margin-left: 80%;
+  width: 15rem;
+  /* margin-left: 80%; */
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
