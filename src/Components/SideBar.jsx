@@ -84,7 +84,7 @@ function SideBar() {
       <div className="bg-white min-h-60 flex flex-col justify-start items-center sm:items-start px-3 rounded-4 pt-2">
         <Link
           to="/"
-          className="text-white text-decoration-none pb-3 mb-sm-0 me-sm-auto">
+          className="text-violet-500 text-decoration-none pb-3 mb-sm-0 me-sm-auto">
           <span className="text-lg hidden sm:inline">Menu</span>
         </Link>
         <ul
@@ -96,14 +96,14 @@ function SideBar() {
                 to={link.path}
                 className={`nav-link align-middle px-0 ${
                   path === link.path
-                    ? "bg-purple-500 text-white"
-                    : "hover:bg-purple-200 text-gray-700"
+                    ? "bg-purple-500 text-blue-900"
+                    : "hover:bg-purple-200 text-violet-700"
                 }`}>
                 <span className="flex items-center">
                   {link.icon}
                   <span
                     className={`ml-2 hidden sm:inline ${
-                      path === link.path ? "text-white" : "text-gray-700"
+                      path === link.path ? "text-red-300" : "text-gray-700"
                     }`}>
                     {link.text}
                   </span>

@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
-import Popup from "../Components/Popup"; // Importez le composant de popup ici
+import PopupBraodcoast from "../Components/PopupBraodcoast"; // Importez le composant de popup ici
 
 function Broadcasts() {
   const data = [
@@ -184,7 +184,7 @@ function Broadcasts() {
         </div>
       </div>
 
-      <Popup
+      <PopupBraodcoast
         isOpen={isTeamPopupOpen}
         onClose={() => setIsTeamPopupOpen(false)}
       />

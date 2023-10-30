@@ -12,25 +12,42 @@ import FormInscription from "./pages/FormInscription";
 import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";
-import Slider from "react-slick";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 function App() {
+  const client = new QueryClient();
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Acceuil />} />
-        <Route path="/dashbord" element={<Dashbord />} />
-        <Route path="/broadcasts" element={<Broadcasts />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/message" element={<MessageComponant />} />
-        <Route path="/connexion" element={<Connexion />} />
-        <Route path="/inscription" element={<Inscription />} />
-        <Route path="/reports" element={<Reports />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/workspace" element={<WorkSpace />} />
-        <Route path="/verification" element={<Verification />} />
-        <Route path="/formulaire" element={<FormInscription />} /> 
-      </Routes>
+      <QueryClientProvider client={client}>
+        <ToastContainer
+          position='top-center'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='light'
+        />
+        <Routes>
+          <Route path='/' element={<Acceuil />} />
+          <Route path='/dashbord' element={<Dashbord />} />
+          <Route path='/broadcasts' element={<Broadcasts />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/message' element={<MessageComponant />} />
+          <Route path='/connexion' element={<Connexion />} />
+          <Route path='/inscription' element={<Inscription />} />
+          <Route path='/reports' element={<Reports />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/workspace' element={<WorkSpace />} />
+          <Route path='/verification' element={<Verification />} />
+          <Route path='/formulaire' element={<FormInscription />} />
+        </Routes>
+      </QueryClientProvider>
     </>
   );
 }

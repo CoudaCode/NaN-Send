@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./../assets/css/Contact.css";
 import Topbar from "../components/Topbar";
 import SideBar from "../Components/SideBar";
-import Popup from "../Components/Popup";
+import PopupContact from "../Components/PopupContact";
 
 function Contact() {
   const data = [
@@ -208,7 +208,7 @@ function Contact() {
       setCurrentPage(page);
     }
   };
-  const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
+  const [isTeamContactOpen, setIsTeamPopupOpen] = useState(false);
 
   const handleAddTeamClick = () => {
     setIsTeamPopupOpen(true);
@@ -258,7 +258,7 @@ function Contact() {
                   <button
                     onClick={handleAddTeamClick}
                     className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'>
-                    Ajouter Team
+                    Ajouter Contact
                   </button>
                 </div>
               </div>
@@ -338,8 +338,8 @@ function Contact() {
         </div>
       </div>
 
-      <Popup
-        isOpen={isTeamPopupOpen}
+      <PopupContact
+        isOpen={isTeamContactOpen}
         onClose={() => setIsTeamPopupOpen(false)}
       />
     </div>
