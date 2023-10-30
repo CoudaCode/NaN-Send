@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import "./../assets/css/Navbar.css";
 //ok
@@ -32,7 +32,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="main-header">
+    <header className="Navbar main-header">
       <div className="container-fluid maNav">
         <nav className="navbar navbar-expand-lg main-nav">
           <a href="#" className="logo">
