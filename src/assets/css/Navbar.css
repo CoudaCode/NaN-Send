@@ -54,7 +54,7 @@ Navbar.css
   font-size: 1.8rem;
 }
 
-#mainMenu li > a {
+#mainMenu .li > Link {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--ma--couleur--text)!important;
@@ -63,10 +63,10 @@ Navbar.css
   z-index: 1;
   text-decoration: none;
 }
-#mainMenu li > a:hover {
+#mainMenu li > Link:hover {
   color: var(--ma-couleur-bouton);
 }
-.Navbar .collapse .main-header.fixed-nav #mainMenu li > a {
+.Navbar .collapse .main-header.fixed-nav #mainMenu li > Link {
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ Navbar.css
   margin-right: 30px;
 }
 
-#mainMenu li > a::before {
+#mainMenu li > Link::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -88,13 +88,13 @@ Navbar.css
   transition: transform 0.5s ease;
 }
 
-#mainMenu li > a:hover::before,
-#mainMenu li > a.active::before {
+#mainMenu li > Link:hover::before,
+#mainMenu li > Link.active::before {
   transform: scale(1, 1);
   transform-origin: left center;
 }
 
-.main-header.fixed-nav #mainMenu li > a::before {
+.main-header.fixed-nav #mainMenu li > Link::before {
   background: #000;
 }
 

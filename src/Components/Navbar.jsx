@@ -1,8 +1,7 @@
-// import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { useState, useEffect } from "react";
-
 import "./../assets/css/Navbar.css";
+import { Link } from "react-router-dom";
 //ok
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -46,7 +45,8 @@ function Navbar() {
             onClick={toggleMenu}
             aria-controls="mainMenu"
             aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span className="icon-bar icon-bar-1"></span>
             <span className="icon-bar icon-bar-2"></span>
             <span className="icon-bar icon-bar-3"></span>
@@ -55,24 +55,36 @@ function Navbar() {
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
-            id="mainMenu">
-            <ul className="navbar-nav ms-5 text-uppercase f1">
-              <li>
-                <a href="#home" className="active active-first">
+            id="mainMenu"
+          >
+            {/* <ul className="navbar-nav ms-5 text-uppercase f1">
+              <li className="lin">
+                <Link to="#" className="active active-first">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about">À propos</a>
+                <Link to="/apropos">À propos</Link>
               </li>
               <li>
-                <a href="#service">Services</a>
+                <Link to="/map" >Services</Link>
               </li>
               <li>
-                <a href="#service">Prix</a>
+                <Link to="/prix">Prix</Link>
               </li>
               <li>
-                <a href="#project">Contact</a>
+                <Link to="/map">Contact</Link>
+              </li>
+            </ul> */}
+            <ul>
+              <li>
+                <a href="Accueil"></a>
+              </li>
+              <li>
+                <a href="Accueil"></a>
+              </li>
+              <li>
+                <a href="Accueil"></a>
               </li>
             </ul>
           </div>

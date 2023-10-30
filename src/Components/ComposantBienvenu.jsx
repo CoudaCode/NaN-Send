@@ -16,7 +16,6 @@ import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
 import principaleimg from "../assets/images/message.jpg";
 import { Link } from "react-router-dom";
 function ComposantBienvenu() {
-  
   return (
     <div className="ComposantBienvenu">
       <div className="article">
@@ -97,16 +96,17 @@ function ComposantBienvenu() {
             </div>
             <button className="cta">
               <div className="links">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
               </div>
-              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -123,18 +123,17 @@ function ComposantBienvenu() {
             </div>
             <button className="cta">
               <div className="links">
-              <span>
-                {" "}
-                <Link to="/Login" className="lien-voirplus">
-                  Voir plus
-                </Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
               </div>
-              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -151,16 +150,17 @@ function ComposantBienvenu() {
             </div>
             <button className="cta">
               <div className="links">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
               </div>
-              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -177,16 +177,17 @@ function ComposantBienvenu() {
             </div>
             <button className="cta">
               <div className="links">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
               </div>
-              
             </button>
           </div>
         </div>
