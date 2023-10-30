@@ -2,36 +2,67 @@ import "./../assets/css/Connexion.css";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 function Connexion() {
-  // const [formData, setFormData] = useState({
-  //   email: "",
-  //   password: "",
-  // });
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //     const data = await axios.post("http://localhost:3000/api/user/login", formData);
-  //     console.log(data);
-  //     console.log(formData);
-  // };
+  const login = async (data) => {
+    const result = await axios.post(
+      "https://nan-send-api.onrender.com/api/user/login",
+      data
+    );
+    return result;
+  };
 
-  // const onChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  //   console.log(formData);
-  // };
+  const { register, handleSubmit } = useForm({
+    email: "",
+    password: "",
+  });
+
+  const { mutate: loginUser } = useMutation({
+    mutationFn: (Mydata) => login(Mydata),
+    onSuccess: (succes) => {
+      toast.success(succes.data.message);
+      setTimeout(() => {
+        navigate("/profil");
+        sessionStorage.setItem(
+          "user",
+          JSON.stringify({ user: "Bailleur", status: true })
+        );
+      }, 3000);
+    },
+    onError: (e) => {
+      console.log(e.response.data.message);
+      toast.error(e.response.data.message);
+    },
+  });
+
+  const onSubmit = (data) => loginUser(data);
   return (
     <>
       <div className='Connexion'>
         <div className='container'>
           <div className='heading'>Connexion</div>
-          <form action='' className='form'>
+          <form action='' className='form' onSubmit={handleSubmit(onSubmit)}>
             <input
-              required=''
+              {...register("email", {
+                required: "svp votre  Email",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "svp entrer un mail valide",
+                },
+              })}
               className='input'
               type='email'
               name='email'
+              {...register("password", { required: true })}
               id='email'
               placeholder='Adresse Email'
             />
