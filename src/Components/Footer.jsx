@@ -62,7 +62,6 @@
 //             style={{ border: "1.5px solid #c7caf6" }}
 //           />
 
-       
 //           <div className="container-fluid p-10 pb-0">
 //             <section>
 //               <div className="row">
@@ -205,8 +204,17 @@
 
 // export default Footer;
 
-
 import imgLogo from "./../assets/images/log.png";
+import "./../assets/css/Footer.css";
+import {
+  FaCheck,
+  FaFacebook,
+  FaLinkedinIn,
+  FaTelegram,
+  FaTiktok,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -225,26 +233,31 @@ function Footer() {
               <div className="lg:w-1/2 lg:flex lg:justify-center lg:space-x-4 mt-4">
                 <div className="text-center lg:text-left">
                   <p className="mb-2">
-                    <i className="fas fa-check mr-2"></i>14 Jours d’essais
+                    <FaCheck />
+                    14 Jours d’essais
                   </p>
                   <p className="mb-2">
-                    <i className="fas fa-check mr-2"></i>Pas de carte de crédit
+                    <FaCheck />
+                    Pas de carte de crédit
                   </p>
                   <p>
-                    <i className="fas fa-check mr-2"></i>Annuler à tout moment
+                    <FaCheck />
+                    Annuler à tout moment
                   </p>
                   <button className="btn-card">Abonnement</button>
                 </div>
                 <hr className="lg:hidden my-3 w-full border-t border-gray-300" />
                 <div className="text-center lg:text-left mt-4 lg:mt-0">
                   <p className="mb-2">
-                    <i className="fas fa-check mr-2"></i>Chattez plus facilement
+                    <FaCheck />
+                    Chattez plus facilement
                   </p>
                   <p className="mb-2">
-                    <i className="fas fa-check mr-2"></i>Avantages de NaN-Send
+                    <FaCheck /> Avantages de NaN-Send
                   </p>
                   <p>
-                    <i className="fas fa-check mr-2"></i>Annuler à tout moment
+                    <FaCheck />
+                    Annuler à tout moment
                   </p>
                   <button className="btn-card">Réservation</button>
                 </div>
@@ -256,7 +269,7 @@ function Footer() {
               <div className="lg:w-1/2 lg:flex lg:items-center">
                 <h3 className="text-3xl font-semibold">
                   NaN-
-                  <span className="text-blue-600 font-bold text-3xl">SEND</span>
+                  <span className=" font-bold text-3xl">SEND</span>
                 </h3>
                 <img src={imgLogo} alt="Logo" className="w-20 ml-4" />
               </div>
@@ -353,9 +366,7 @@ function Footer() {
                     placeholder="Email"
                     className="bg-gray-700 text-white p-2 rounded"
                   />
-                  <button
-                    className="bg-blue-600 text-white p-2 rounded mt-2"
-                  >
+                  <button className="bg-blue-600 text-white p-2 rounded mt-2">
                     Envoyer
                   </button>
                 </div>
@@ -369,28 +380,28 @@ function Footer() {
                   <div className="p-3">
                     {" "}
                     NaN-
-                    <span className="text-blue-600">SEND</span>
+                    <span className="text-#6870e0">SEND</span>
                   </div>
                 </div>
-                <div className="lg:w-1/2 text-center lg:text-right mt-4 lg:mt-0">
-                  <a className="mr-2" role="button">
-                    <i className="fab fa-telegram"></i>
+                <div className="lg:w-1/2 text-center lg:text-right mt-4 lg:mt-0 float-right  Icon">
+                  <a className="mr-3 " role="button">
+                    <FaLinkedinIn className="animate-bounce w-6 h-6" />
                   </a>
 
-                  <a className="mr-2" role="button">
-                    <i className="fab fa-facebook-f"></i>
+                  <a className="mr-3" role="button">
+                    <FaTelegram className="animate-bounce w-6 h-6 " />
                   </a>
-                  <a className="mr-2" role="button">
-                    <i className="fab fa-linkedin"></i>
+                  <a className="mr-3" role="button">
+                    <FaYoutube className="animate-bounce w-6 h-6 " />
                   </a>
-                  <a className="mr-2" role="button">
-                    <i className="fab fa-twitter"></i>
+                  <a className="mr-3" role="button">
+                    <FaTiktok className="animate-bounce w-6 h-6 " />
                   </a>
-                  <a className="mr-2" role="button">
-                    <i className="fab fa-youtube"></i>
+                  <a className="mr-3" role="button">
+                    <FaWhatsapp className="animate-bounce w-6 h-6 " />
                   </a>
                   <a role="button">
-                    <i className="fab fa-whatsapp"></i>
+                    <FaFacebook className="animate-bounce w-6 h-6 " />
                   </a>
                 </div>
               </div>

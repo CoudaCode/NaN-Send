@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./../assets/css/Message.css";
 
 import images from "../assets/images/whatsapp1.png";

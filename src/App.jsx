@@ -12,8 +12,6 @@ import FormInscription from "./pages/FormInscription";
 import Broadcasts from "./pages/Broadcasts";
 import MessageComponant from "./pages/MessageComponant";
 import WorkSpace from "./pages/WorkSpace";                                                                     
-import WorkSpace from "./pages/WorkSpace";
-import Slider from "react-slick";
 
 
 function App() {

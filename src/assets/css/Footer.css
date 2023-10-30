@@ -136,4 +136,14 @@
   }
 } */
 
+.Footer .Icon {
+  display: flex;
+}
 
+.Footer .Icon a {
+  color: #6870e0;
+}
+
+.Footer span {
+  color: #6870e0;
+}
