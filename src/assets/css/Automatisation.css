@@ -419,13 +419,13 @@
   color: #6870e0;
 }
 
-/* @media screen and (max-width: 1012px) {
+ @media screen and (max-width: 1311px) {
   .Automatisation .espace{
     flex-wrap: wrap;
   }
 
   .Automatisation .colore{
-    height: 130vh;
+    height: auto;
   }
 
   .Automatisation .separe{
@@ -435,10 +435,65 @@
   }
 
   .Automatisation .send{
-    height: 80vh;
+    height: auto;
   }
 }
-@media screen and (max-width: 630px) {
+
+@media screen and (max-width: 946px) {
+  .scroll-container {
+    width: 100%; /* Définissez la largeur du conteneur horizontal selon vos besoins */
+    overflow-x: auto; /* Activez la barre de défilement horizontale lorsque le contenu dépasse la largeur du conteneur */
+    white-space: nowrap; /* Empêche le contenu à l'intérieur du conteneur de passer à la ligne */
+}
+.steps .list .item {
+  display: inline-block;
+  width: 200px; /* Définissez la largeur des éléments selon vos besoins */
+  vertical-align: top;
+}
+}
+
+@media screen and (max-width: 1559px) {
+  .Automatisation .send{
+    height: auto;
+  }
+}
+@media screen and (max-width: 1675px) {
+  .Automatisation .send{
+    height: auto;
+  }
+}
+@media screen and (min-width: 1675px) {
+  .Automatisation .send{
+    height: auto;
+  }
+}
+@media screen and (max-width: 1032px) {
+  .Automatisation .flax{
+    flex-direction: column;
+    text-align: center;
+  }
+  © .premiText{
+    margin-top: 0;
+  }
+  .Automatisation .cool{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 654px ) {
+  .Automatisation .cool{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 645px) {
+  .Automatisation .carre {
+    align-items: center;
+    height: 400px;
+    width: 400px;
+  }
+}
+/*@media screen and (max-width: 630px) {
   .Automatisation .colore{
     height: 130vh;
   }

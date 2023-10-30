@@ -45,6 +45,7 @@ function Automatisation() {
           <br />
           <br />
           <div className='espace'>
+            <div className="scroll-container">
             <div className='steps'>
               <ul className='list'>
                 <li className='item'>
@@ -87,7 +88,7 @@ function Automatisation() {
                 </li>
               </ul>
             </div>
-
+            </div>
             <div className='carrelage'>
               <div className='monTitre'>
                 <h2>Message Chat</h2>
