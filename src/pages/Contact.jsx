@@ -208,7 +208,6 @@ function Contact() {
       setCurrentPage(page);
     }
   };
-
   const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
 
   const handleAddTeamClick = () => {

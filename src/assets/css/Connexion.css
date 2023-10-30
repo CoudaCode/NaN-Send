@@ -1,6 +1,6 @@
 .Connexion {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +44,7 @@
   padding: 15px 20px;
   border-radius: 20px;
   margin-top: 15px;
+  color: black;
   box-shadow: var(--mon--autre--couleur) 0px 10px 10px -5px;
   border-inline: 2px solid transparent;
 }
