@@ -49,46 +49,46 @@ function Automatisation() {
 <div className="espace">
           <div className="steps">
             <ul className="list">
-<li class="item">
-<span class="progress-label">Conversation
+<li className="item">
+<span className="progress-label">Conversation
 debut</span>
-    <span class="progress-count">
+    <span className="progress-count">
     < RxHamburgerMenu className="icon"/>
     </span>
     
 </li>
-<li class="item current-item">
-    <span class="progress-label">Menu
+<li className="item current-item">
+    <span className="progress-label">Menu
 Canals</span>
-    <span class="progress-counte">
+    <span className="progress-counte">
     < RxHamburgerMenu className="icon"/>
     </span>
 </li>
-<li class="item">
-    <span class="progress-label">Canal
+<li className="item">
+    <span className="progress-label">Canal
 selectionné</span>
-    <span class="progress-counte">
+    <span className="progress-counte">
     < FaWhatsapp className="icon"/>
     </span>
 </li>
-<li class="item">
-    <span class="progress-label">tagget 
+<li className="item">
+    <span className="progress-label">tagget 
 d'intérêt</span>
-    <span class="progress-counte">
+    <span className="progress-counte">
     < BiMicrophone className="icon"/>
     </span>
 </li>
-<li class="item">
-    <span class="progress-label">Checkout</span>
-    <span class="progress-counte">
+<li className="item">
+    <span className="progress-label">Checkout</span>
+    <span className="progress-counte">
     < RxHamburgerMenu className="icon"/>
     </span>
 </li>
-<li class="item">
+<li className="item">
     
-    <span class="progress-label">Conversation
+    <span className="progress-label">Conversation
 fermé</span>
-    <span class="progress-count"> < RxHamburgerMenu className="icon"/></span>
+    <span className="progress-count"> < RxHamburgerMenu className="icon"/></span>
 </li>
             </ul>
           </div>

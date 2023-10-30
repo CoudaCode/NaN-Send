@@ -111,8 +111,8 @@
 }
 .progress-count:after{
   content: "";
-  height: 40px;
-  width: 40px;
+  height: 60px;
+    width: 66px;
   background: #6870E0;
   position: absolute;
   left: 50%;
@@ -124,8 +124,8 @@
 
 .progress-counte:after{
   content: "";
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 66px;
   background: #6870E0;
   position: absolute;
   left: 50%;
@@ -186,6 +186,7 @@
 }
 .Automatisation .espace{
   display: flex;
+  justify-content: center;
 }
 .Automatisation .carrelage{
   height: 250px;
