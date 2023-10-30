@@ -26,36 +26,29 @@
   background-color: #262935;
 }
 
-
-
-
-
-
-
-
 .Automatisation .boton {
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 75px; 
+  margin-top: 75px;
 }
 
-.Automatisation .step{
+.Automatisation .step {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Automatisation .list{
+.Automatisation .list {
   background-color: #262935;
   color: white;
   display: flex;
   padding: 20px 10px;
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
-.Automatisation .item{
+.Automatisation .item {
   padding: 0 20px;
   flex-basis: 0;
   -webkit-box-flex: 1;
@@ -69,45 +62,45 @@
   position: relative;
 }
 
-.item + .item:after{
+.item + .item:after {
   content: "";
   position: absolute;
   left: 0;
   top: 19px;
-  background: #6870E0;
+  background: #6870e0;
   width: 100%;
   height: 2px;
   transform: translateX(-50%);
   z-index: -10;
-  border: 1px dashed #6870E0;
+  border: 1px dashed #6870e0;
 }
 
-.progress-count{
+.progress-count {
   height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 600;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    color: transparent;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  color: transparent;
 }
 
-.progress-counte{
+.progress-counte {
   height: 75px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 600;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    color: transparent;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  color: transparent;
 }
 
 .progress-coun{
@@ -124,24 +117,11 @@
     color: transparent;
 }
 
-.progress-count:after{
-  content: "";
-  height: 60px;
-    width: 66px;
-  background: #6870E0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: -10;
-}
-
-.progress-counte:after{
+.progress-count:after {
   content: "";
   height: 60px;
   width: 66px;
-  background: #6870E0;
+  background: #6870e0;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -150,11 +130,11 @@
   z-index: -10;
 }
 
-.progress-coun:after{
+.progress-counte:after {
   content: "";
-  height: 40px;
-    width: 39px;
-  background: #6870E0;
+  height: 60px;
+  width: 66px;
+  background: #6870e0;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -175,7 +155,7 @@
   transform-origin: center center;
 }
 
-.progress-counte:before{
+.progress-counte:before {
   content: "";
   height: 10px;
   width: 20px;
@@ -199,13 +179,7 @@
   transform-origin: center center;
 }
 .Automatisation .icon{
-  font-size: 45px;
-  color: #fff;
-}
-
-.Automatisation .ico{
-  font-size: 22px;
-  color: #fff;
+  font-size: 25px;
 }
 .progress-label {
   font-size: 14px;
@@ -214,36 +188,35 @@
 }
 
 .current-item .progress-count:before,
-.current-item ~ .item .progress-count:before{
-    display: none;
+.current-item ~ .item .progress-count:before {
+  display: none;
 }
 
-
-.current-item ~ .item .progress-label{
-    opacity: 0.5;
+.current-item ~ .item .progress-label {
+  opacity: 0.5;
 }
-.current-item .progress-count:after{
-    background: #fff;
-    border: 2px solid #6870E0;
+.current-item .progress-count:after {
+  background: #fff;
+  border: 2px solid #6870e0;
 }
-.current-item .progress-count{
-    color: #6870E0;
+.current-item .progress-count {
+  color: #6870e0;
 }
-.Automatisation .espace{
+.Automatisation .espace {
   display: flex;
   justify-content: center;
 }
-.Automatisation .carrelage{
+.Automatisation .carrelage {
   height: 250px;
   width: 280px;
   border: 1px solid #262935;
 }
-.Automatisation .monTitre{
+.Automatisation .monTitre {
   text-align: center;
-  color: #6870E0;
+  color: #6870e0;
 }
 
-.Automatisation .monPara{
+.Automatisation .monPara {
   text-align: center;
   color: #fff;
   font-size: 1rem;
@@ -265,14 +238,12 @@
   background-color: #262935;
   color: #6870e0;
   cursor: pointer;
-} 
+}
 
 .Automatisation .etpe1:hover {
   background-color: #6870e0;
   color: white;
 }
-
-
 
 /* DEUXIEME PARTIE */
 .Automatisation .separe {
@@ -347,7 +318,7 @@
   border-radius: 10px;
   background-color: white;
 }
-.Automatisation .caro .second p{
+.Automatisation .caro .second p {
   margin: 0;
 }
 .Automatisation .second {
@@ -363,11 +334,11 @@
   display: flex;
   justify-content: space-evenly;
 }
-.Automatisation .loop{
+.Automatisation .loop {
   display: flex;
 }
 
-.Automatisation .cors{
+.Automatisation .cors {
   display: flex;
 }
 .Automatisation .photo img {
@@ -419,94 +390,46 @@
   color: #6870e0;
 }
 
- @media screen and (max-width: 1311px) {
+@media screen and (max-width: 1012px) {
   .Automatisation .espace{
     flex-wrap: wrap;
   }
 
   .Automatisation .colore{
-    height: auto;
+    height: 130vh;
   }
 
-  .Automatisation .separe{
+  .Automatisation .separe {
     flex-direction: column;
     align-items: center;
     gap: 5px;
   }
 
   .Automatisation .send{
-    height: auto;
+    height: 80vh;
   }
 }
-
-@media screen and (max-width: 946px) {
-  .scroll-container {
-    width: 100%; /* Définissez la largeur du conteneur horizontal selon vos besoins */
-    overflow-x: auto; /* Activez la barre de défilement horizontale lorsque le contenu dépasse la largeur du conteneur */
-    white-space: nowrap; /* Empêche le contenu à l'intérieur du conteneur de passer à la ligne */
-}
-.steps .list .item {
-  display: inline-block;
-  width: 200px; /* Définissez la largeur des éléments selon vos besoins */
-  vertical-align: top;
-}
-}
-
-@media screen and (max-width: 1559px) {
-  .Automatisation .send{
-    height: auto;
-  }
-}
-@media screen and (max-width: 1675px) {
-  .Automatisation .send{
-    height: auto;
-  }
-}
-@media screen and (min-width: 1675px) {
-  .Automatisation .send{
-    height: auto;
-  }
-}
-@media screen and (max-width: 1032px) {
-  .Automatisation .flax{
-    flex-direction: column;
-    text-align: center;
-  }
-  © .premiText{
-    margin-top: 0;
-  }
-  .Automatisation .cool{
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 654px ) {
-  .Automatisation .cool{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 645px) {
-  .Automatisation .carre {
-    align-items: center;
-    height: 400px;
-    width: 400px;
-  }
-}
-/*@media screen and (max-width: 630px) {
+@media screen and (max-width: 630px) {
   .Automatisation .colore{
     height: 130vh;
   }
 }
 @media screen and (max-width: 998px) {
-  .Automatisation .list{
+  .Automatisation .list {
     flex-wrap: wrap;
     z-index: auto;
   }
+  .Automatisation .flax {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Automatisation .cool {
+    flex-direction: column;
+}
 }
 
 @media screen and (max-width: 1366px) {
-  .Automatisation .send{
-    height: 110vh;
+  .Automatisation .send {
+    height: auto;
   }
-} */
+}
