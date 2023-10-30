@@ -318,8 +318,14 @@
     transform: translateX(-5px);
     transition: all 0.3s ease;
   }
+  .ComposantBienvenu .cta .links{
+    display: flex;
+  }
   .ComposantBienvenu .cta .lien-voirplus {
     color: var(--ma-couleur-principale);
+  }
+  .ComposantBienvenu .cta .svg{
+    margin-top: 2rem;
   }
 
   .ComposantBienvenu .cta:hover:before {

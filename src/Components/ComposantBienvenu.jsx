@@ -96,6 +96,7 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
+              <div className="links">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>
@@ -104,6 +105,8 @@ function ComposantBienvenu() {
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
+              </div>
+              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -119,6 +122,7 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
+              <div className="links">
               <span>
                 {" "}
                 <Link to="/Login" className="lien-voirplus">
@@ -129,6 +133,8 @@ function ComposantBienvenu() {
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
+              </div>
+              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -144,6 +150,7 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
+              <div className="links">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>
@@ -152,6 +159,8 @@ function ComposantBienvenu() {
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
+              </div>
+              
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -167,6 +176,7 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
+              <div className="links">
               <span>
                 {" "}
                 <Link className="lien-voirplus">Voir plus</Link>
@@ -175,6 +185,8 @@ function ComposantBienvenu() {
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
+              </div>
+              
             </button>
           </div>
         </div>

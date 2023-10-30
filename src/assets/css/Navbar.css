@@ -57,7 +57,7 @@ Navbar.css
 #mainMenu li > a {
   font-size: 12px;
   letter-spacing: 1px;
-  color: var(--ma--couleur--text);
+  color: var(--ma--couleur--text)!important;
   font-weight: 400;
   position: relative;
   z-index: 1;
