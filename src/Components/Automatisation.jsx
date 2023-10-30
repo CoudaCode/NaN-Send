@@ -43,107 +43,72 @@ function Automatisation() {
               <button className="etpe1">Requis</button>
             </div>
 
-            <div className="flex">
-              <div className="scrollbar">
-              <div className="flex1">
-                <p>
-                  Conversation <br /> debut
-                </p>
+            
+          </div>
+          <br /><br /><br />
+<div className="espace">
+          <div className="steps">
+            <ul className="list">
+<li class="item">
+<span class="progress-label">Conversation
+debut</span>
+    <span class="progress-count">
+    < RxHamburgerMenu className="icon"/>
+    </span>
+    
+</li>
+<li class="item current-item">
+    <span class="progress-label">Menu
+Canals</span>
+    <span class="progress-counte">
+    < RxHamburgerMenu className="icon"/>
+    </span>
+</li>
+<li class="item">
+    <span class="progress-label">Canal
+selectionné</span>
+    <span class="progress-counte">
+    < FaWhatsapp className="icon"/>
+    </span>
+</li>
+<li class="item">
+    <span class="progress-label">tagget 
+d'intérêt</span>
+    <span class="progress-counte">
+    < BiMicrophone className="icon"/>
+    </span>
+</li>
+<li class="item">
+    <span class="progress-label">Checkout</span>
+    <span class="progress-counte">
+    < RxHamburgerMenu className="icon"/>
+    </span>
+</li>
+<li class="item">
+    
+    <span class="progress-label">Conversation
+fermé</span>
+    <span class="progress-count"> < RxHamburgerMenu className="icon"/></span>
+</li>
+            </ul>
+          </div>
 
-                <div className="ball">
-                  <div className="bull">
-                    <div className="saiPas">
-                      <p>ytfjhyvhhgjhvjhjjhvjgh,vnjhvjhvjgjjgjhngfdc</p>
-                    </div>
-                  </div>
-                  <div className="tracer"></div>
-                </div>
-              </div>
-
-              <div className="flex1">
-                <p>
-                  Menu
-                  <br /> Canals
-                </p>
-
-                <div className="ball">
-                  <div className="bull">
-                    <RxHamburgerMenu className="icon" />
-                  </div>
-                  <div className="tracer"></div>
-                </div>
-              </div>
-
-              <div className="flex1">
-                <p>
-                  Canal
-                  <br /> selectionné
-                </p>
-
-                <div className="ball">
-                  <div className="bull">
-                    <FaWhatsapp className="icon" />
-                  </div>
-                  <div className="tracer"></div>
-                </div>
-              </div>
-
-              <div className="flex1">
-                <p>
-                  tagget
-                  <br /> d'intérêt
-                </p>
-
-                <div className="ball">
-                  <div className="bull">
-                    <RxTarget className="icon" />
-                  </div>
-                  <div className="tracer"></div>
-                </div>
-              </div>
-
-              <div className="flex1">
-                <p>
-                  <br /> <br />{" "}
-                </p>
-
-                <div className="ball">
-                  <div className="bulle">
-                    <BiTimeFive className="icon" />
-                  </div>
-                  <div className="tracer"></div>
-                </div>
-              </div>
-
-              <div className="flex1">
-                <p>
-                  Conversation <br /> fermé
-                </p>
-
-                <div className="ball">
-                  <div className="bull">
-                    <AiOutlineCheck className="icon" />
-                  </div>
-                </div>
-              </div>
-              </div>
-
-              <div className="chat">
-                <h4>Message Chat</h4>
-                <div className="texto">
-                  <p>
-                    Créez une expérience client de haute qualité avec des menus
-                    de discussion polyvalents. Invitez vos contacts à explorer
-                    des produits et services et marquez leurs intérêts pour une
-                    utilisation future dans des listes de prospects, des
-                    diffusions marketing ou des campagnes goutte à goutte.
-                  </p>
-                </div>
-                <div className="trai"></div>
-                {/* <div className='trai'></div>
-<div className='trai'></div> */}
-              </div>
+          <div className="carrelage">
+            <div className="monTitre">
+              <h2>Message Chat</h2>
             </div>
+
+            <div className="monPara">
+              <p>Créez une expérience client de haute
+ qualité avec des menus de discussion
+ polyvalents. Invitez vos contacts à explorer
+ des produits et services et marquez
+ leurs intérêts pour une utilisation
+ future dans des listes de prospects,
+ des diffusions marketing ou des 
+campagnes goutte à goutte.</p>
+            </div>
+          </div>
           </div>
         </div>
 
