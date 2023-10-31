@@ -1,12 +1,12 @@
 import React from "react";
 import "./../assets/css/Reports.css";
-import Topbar from "./../components/Topbar";
+import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 function Reports() {
   return (
     <>
       <div className="Reports">
-        <Topbar />
+        <TopBar />
         <div className="container-fluid mt-4">
           <div className="row flex-nowrap">
             <SideBar />

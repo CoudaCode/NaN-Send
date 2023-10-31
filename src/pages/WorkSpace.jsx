@@ -1,7 +1,7 @@
 import React from "react";
 import "./../assets/css/WorkSpace.css";
 
-import Topbar from "./../components/Topbar";
+import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 function WorkSpace() {
   return (

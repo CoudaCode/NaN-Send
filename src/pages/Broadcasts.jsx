@@ -1,5 +1,5 @@
 import "./../assets/css/Broadcasts.css";
-import Topbar from "../components/Topbar";
+import TopBar from "../components/Topbar";
 import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
@@ -7,7 +7,7 @@ import gmail from "./../assets/images/email.png";
 function Broadcasts() {
   return (
     <div className="Broadcasts">
-      <Topbar />
+      <TopBar />
       <div className="container-fluid mt-4">
         <div className="row flex-nowrap">
           <SideBar />
