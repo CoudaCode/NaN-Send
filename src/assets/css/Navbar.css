@@ -4,18 +4,20 @@ Navbar.css
 [data-target="#mainMenu"] {
   position: relative;
   z-index: 999;
+
 }
 .maNav {
-  box-shadow: 1px 1px 1px 1px var(--ma-couleur-bouton);
+  
   padding: 0.3rem;
 }
 .scrolled {
   background-color: var(--ma-couleur-bouton);
 }
-.scrolled li a:hover{
+.scrolled li .meslinks:hover{
   color:var(--ma--couleur--text) !important;
 }
-.scrolled #mainMenu li > a::before {
+
+.scrolled #mainMenu li > .meslinks::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -28,17 +30,18 @@ Navbar.css
   z-index: -1;
   transition: transform 0.5s ease;
 }
-.scrolled .maNav .logo .log-msg {
+.scrolled .maNav .logo .log-msg .log1 {
   color: var(--ma-couleur-principale) !important;
 }
 
-.scrolled .maNav .log2 {
+.scrolled .maNav .logo .log-msg .log2 {
   color: var(--ma-couleur-principale) !important;
-}
+} 
 
 .maNav .logo {
   margin-left: 12rem;
   text-decoration: none;
+  display: flex;
 }
 .maNav .logo .log-msg {
   font-size: 2rem;
@@ -53,27 +56,30 @@ Navbar.css
   font-size: 1.8rem;
 }
 
-#mainMenu li > a {
+ .meslinks {
   font-size: 12px;
   letter-spacing: 1px;
-  color: var(--ma--couleur--text);
+  color: var(--ma--couleur--text)!important;
   font-weight: 400;
   position: relative;
   z-index: 1;
   text-decoration: none;
 }
-#mainMenu li > a:hover {
+.meslinks:hover {
   color: var(--ma-couleur-bouton);
 }
-.Navbar .collapse .main-header.fixed-nav #mainMenu li > a {
+.Navbar .collapse .main-header.fixed-nav #mainMenu li > Link {
   text-decoration: none;
+}
+.collapse{
+  visibility: visible;
 }
 
 #mainMenu li:not(:last-of-type) {
   margin-right: 30px;
 }
 
-#mainMenu li > a::before {
+#mainMenu li > .meslinks::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -87,13 +93,13 @@ Navbar.css
   transition: transform 0.5s ease;
 }
 
-#mainMenu li > a:hover::before,
-#mainMenu li > a.active::before {
+#mainMenu li > .meslinks:hover::before,
+#mainMenu li > .meslinks.active::before {
   transform: scale(1, 1);
   transform-origin: left center;
 }
 
-.main-header.fixed-nav #mainMenu li > a::before {
+.main-header.fixed-nav #mainMenu li > .meslinks::before {
   background: #000;
 }
 

@@ -14,9 +14,9 @@ function PopupBraodcoast({ isOpen, onClose }) {
     return null;
   }
   return (
-    <div className='fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-50'>
-      <div className='bg-white p-4 rounded-md shadow-md'>
-        <h2 className='text-2xl mb-4'>Ajouter une Nouvelle Team</h2>
+    <div className="Popup fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-50">
+      <div className="bg-white p-4 rounded-md shadow-md">
+        <h2 className="text-2xl mb-4">Ajouter une Nouvelle Team</h2>
         <input
           type='text'
           placeholder="Nom de l'équipe"

@@ -16,6 +16,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useRef } from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import Prix from "./Components/Prix";
+import Map from "./Components/Map";
 
 function App() {
  let client = useRef( new QueryClient());
@@ -46,9 +48,15 @@ function App() {
           <Route path="/workspace" element={<WorkSpace />} />
           <Route path="/verification" element={<Verification />} />
           <Route path="/formulaire" element={<FormInscription />} /> 
+               {/* <Route path="/apropos" element={<Apropos />} /> */}
+          <Route path="/prix" element={<Prix />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
     </QueryClientProvider>
     
+   
+   
+     
     </>
   );
 }

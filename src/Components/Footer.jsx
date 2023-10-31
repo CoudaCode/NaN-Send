@@ -210,7 +210,7 @@ import imgLogo from "./../assets/images/log.png";
 
 function Footer() {
   return (
-    <div className="bg-gray-900 text-white py-10">
+    <div className="Footer bg-gray-900 text-white py-10">
       <div className="container mx-auto">
         <footer className="text-center">
           <div className="container mx-auto">

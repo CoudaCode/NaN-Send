@@ -1,15 +1,14 @@
-// import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
-
-import "./../assets/css/Navbar.css";
-
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./../assets/css/Navbar.css";
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    
   };
 
   const handleScroll = (nav) => {
@@ -33,13 +32,13 @@ function Navbar() {
   }, []);
 
   return (
-    <header className='main-header'>
-      <div className='container-fluid maNav'>
-        <nav className='navbar navbar-expand-lg main-nav'>
-          <a href='#' className='logo'>
-            <span className='log-msg'>{<BiSolidMessageRoundedDots />}</span>
-            <span className='log1'>NaN-</span>
-            <span className='log2'>SEND</span>
+    <header className="Navbar main-header">
+      <div className="container-fluid maNav">
+        <nav className="navbar navbar-expand-lg main-nav">
+          <a href="#" className="logo">
+            <span className="log-msg">{<BiSolidMessageRoundedDots />}</span>
+            <span className="log1">NaN-</span>
+            <span className="log2">SEND</span>
           </a>
           <button
             className='navbar-toggler'
@@ -56,24 +55,24 @@ function Navbar() {
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
-            id='mainMenu'>
-            <ul className='navbar-nav ms-5 text-uppercase f1'>
+            id="mainMenu">
+           <ul className="navbar-nav ms-5 text-uppercase f1">
               <li>
-                <a href='#home' className='active active-first'>
+                <Link to="#home" className="active active-first meslinks">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#about'>À propos</a>
+                <Link to="#about" className="meslinks">À propos</Link>
               </li>
               <li>
-                <a href='#service'>Services</a>
+                <Link to="#service" className="meslinks">Services</Link>
               </li>
               <li>
-                <a href='#service'>Prix</a>
+                <Link to="#service" className="meslinks">Prix</Link>
               </li>
               <li>
-                <a href='#project'>Contact</a>
+                <Link to="#project" className="meslinks">Contact</Link>
               </li>
             </ul>
           </div>

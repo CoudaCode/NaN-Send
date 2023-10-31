@@ -1,4 +1,5 @@
 import React from "react";
+import  { useEffect, useState } from "react";
 import "./../assets/css/ComposantBienvenu.css";
 import imagEcobanck from "../assets/images/ecobank.jpeg";
 import imagOrange from "../assets/images/Orange-Couleur.jpeg";
@@ -15,8 +16,42 @@ import msgillimit from "../assets/images/msgillimit.jpg";
 import msgGroupe2 from "../assets/images/msgGroupé2.jpg";
 import principaleimg from "../assets/images/message.jpg";
 import { Link } from "react-router-dom";
+import imgslid1 from "../assets/images/slid1.jpg";
+import imgslid2 from "../assets/images/slid2.jpg";
+import imgslid3 from "../assets/images/slid3.jpg";
+import imgslid4 from "../assets/images/slid4.jpg";
+import imgslid5 from "../assets/images/slid5.jpg";
+import imgslid6 from "../assets/images/slid6.jpg";
+import imgslid7 from "../assets/images/slid7.jpg";
+
+
 function ComposantBienvenu() {
-  
+
+  const [slidIndex, setSlidIndex] = useState(0);
+
+  useEffect(() => {
+    const fonctionSlid = () => {
+      const slid = document.querySelectorAll(".slid");
+      for (let i = 0; i < slid.length; i++) {
+        slid[i].style.display = "none";
+      }
+
+      setSlidIndex((slidIndex) => {
+        let nextIndex = slidIndex + 1;
+        if (nextIndex >= slid.length) {
+          nextIndex = 0;
+        }
+        slid[nextIndex].style.display = "block";
+        return nextIndex;
+      });
+    };
+
+    const intervalId = setInterval(fonctionSlid, 2000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
   return (
     <div className="ComposantBienvenu">
       <div className="article">
@@ -55,9 +90,21 @@ function ComposantBienvenu() {
           </div>
         </div>
         <div className="partieSlid">
-          <div className="moncadreslid">
+          {/* <div className="moncadreslid">
             <img src={principaleimg} alt="" />
-          </div>
+          </div> */}
+
+<div className="moncadreslid">
+
+  <div className="slid"> <img src={imgslid1} alt="" width="100%" height="70%"/></div>
+  <div className="slid"> <img src={imgslid2} alt=""  width="100%" height="70%"/></div>
+  <div className="slid"> <img src={imgslid3} alt=""  width="100%" height="70%"/></div>
+  <div className="slid"> <img src={imgslid7} alt=""  width="100%" height="70%"/></div>
+  <div className="slid"> <img src={imgslid5} alt=""  width="100%" height="70%"/></div>
+  <div className="slid"> <img src={imgslid6} alt=""  width="100%" height="70%"/></div> 
+
+</div>
+
         </div>
       </div>
       <div className="titleCentral">
@@ -96,14 +143,18 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+              <div className="links">
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
+              </div>
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -119,16 +170,18 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
-              <span>
-                {" "}
-                <Link to="/Login" className="lien-voirplus">
-                  Voir plus
-                </Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+              <div className="links">
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
+              </div>
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -144,14 +197,18 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+              <div className="links">
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
+              </div>
             </button>
           </div>
           <div className="ligne-cardre1">
@@ -167,14 +224,18 @@ function ComposantBienvenu() {
               </h4>
             </div>
             <button className="cta">
-              <span>
-                {" "}
-                <Link className="lien-voirplus">Voir plus</Link>
-              </span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+              <div className="links">
+                <div className="fleche">
+                  <span>
+                    {" "}
+                    <Link className="lien-voirplus ">Voir plus</Link>
+                  </span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </div>
+              </div>
             </button>
           </div>
         </div>
