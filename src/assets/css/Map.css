@@ -1,76 +1,36 @@
-.Map {
-  margin-top: 1rem;
-  width: 100%;
-  height: 80vh;
-  background-color: #fff;
-}
-.Map .frame {
-  width: 80%;
-  height: 80%;
-  position: relative;
-  margin: auto;
+.Map .cadre {
+  border: 1px solid #fff;
 }
 
-iframe {
-  border: 1px solid purple;
-  box-shadow: 3px 5px 5px grey;
+.Map h1 {
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 2.5rem;
 }
 
-.Map .frame .contact {
-  position: absolute;
-  width: 50%;
-  height: 41vh;
-  top: 60%;
-  left: 23vw;
-  /* background-color: #6870e0c6; */
-  background-color: #262935;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.Map .frame .contact h1 {
-  text-align: center;
+/*ligne1*/
+.Map .items-start .Icon {
+  border: 2px solid #6870e0;
+  color: #fff;
+  font-size: 2rem;
   margin: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  color: #ffff;
+  border-radius: 100%;
+  padding: 10px;
 }
-
-.Map .frame .contact .row {
-  margin-left: 6vw;
-}
-
-.Map .frame .w-100 {
-  margin: 35px;
-}
-
-.Map .frame .row p {
-  color: #ffff;
-  font-size: 17px;
-}
-
-.Map .frame .row .fa-solid,
-.Map .frame .fa-regular {
-  font-size: 25px;
-  color: #ffff;
-  list-style: none;
-  border: 3px solid #6870e0;
-  padding: 15px;
-  border-radius: 50px;
-  margin-bottom: 10px;
-}
-
-.Map .frame .mesLien a {
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-}
-
-.Map .frame :hover.row .fa-solid,
-.Map .fa-regular {
+.Map .items-start .Icon:hover {
   color: #6870e0;
+  border: 2px solid #fff;
 }
-
-.Map .frame :hover a {
-  color: white;
+/*ligne2*/
+.Map .align-start .Icon {
+  border: 2px solid #6870e0;
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.Map .align-start .Icon:hover {
+  color: #6870e0;
+  border: 2px solid #fff;
 }
