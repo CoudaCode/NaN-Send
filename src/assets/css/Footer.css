@@ -1,10 +1,10 @@
-/* Styles pour le composant Footer */
+/* 
 .Footer {
   background-color: #262935;
   width: 100%;
   height: auto;
 }
-/* Styles pour la section principale */
+
 .Footer .footer {
   display: flex;
   justify-content: space-around;
@@ -24,7 +24,6 @@
   font-size: 20px;
 }
 
-/* Styles pour les cartes */
 .Footer .BoxCard {
   width: 60%;
   display: flex;
@@ -68,9 +67,6 @@
   color: white;
 }
 
-/* ... Autres styles ... */
-
-/* Styles pour les liens de médias sociaux */
 .Footer .bas a {
   color: #fff;
   font-size: 1.5rem;
@@ -86,14 +82,12 @@
   color: #6870e0;
 }
 
-/* Styles pour les titres */
 .footer h5 {
   margin-bottom: 40px;
   font-size: 1.4rem;
   color: #6870e0;
 }
 
-/* Styles pour la zone d'inscription */
 .Footer .rait {
   width: 100%;
   height: 30px;
@@ -114,14 +108,12 @@
   color: rgba(128, 128, 128, 0.611);
 }
 
-/* Styles pour les médias sociaux dans la version ordinateur */
 @media screen and (min-width: 1024px) {
   .Footer .footer {
     width: 100%;
   }
 }
 
-/* Styles pour les écrans plus petits */
 @media screen and (max-width: 767px) {
   .Footer .footer {
     flex-direction: column;
@@ -142,4 +134,16 @@
     margin: auto;
     height: 13vh;
   }
+} */
+
+.Footer .Icon {
+  display: flex;
+}
+
+.Footer .Icon a {
+  color: #6870e0;
+}
+
+.Footer span {
+  color: #6870e0;
 }
