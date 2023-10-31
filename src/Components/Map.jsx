@@ -1,4 +1,4 @@
-import "./../assets/css/Map.css";
+import "./../assets/css/Map.css"
 import { FaCalendar, FaPhone, FaEnvelope, FaAddressCard } from "react-icons/fa";
 
 function Map() {

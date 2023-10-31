@@ -1,4 +1,4 @@
-import "./../assets/css/Broadcasts.css";
+import "./../assets/css/Broadcasts.css"
 import Topbar from "./../Components/Topbar"
 import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";

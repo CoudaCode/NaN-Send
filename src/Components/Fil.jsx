@@ -1,5 +1,4 @@
-import React from "react";
-import "./../assets/css/Fil.css";
+import "./../assets/css/Fil.css"
 import { Link } from "react-router-dom";
 function Fil() {
   return (

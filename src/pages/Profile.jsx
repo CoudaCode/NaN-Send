@@ -1,4 +1,4 @@
-import "../assets/css/Profile.css";
+import "./../assets/css/Profile.css"
 import Topbar from "./../Components/Topbar";
 import SideBar from "./../Components/SideBar";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
 
-import "./../assets/css/Acceuil.css";
+import "./../assets/css/Acceuil.css"
 import ComposantBienvenu from "../Components/ComposantBienvenu";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";

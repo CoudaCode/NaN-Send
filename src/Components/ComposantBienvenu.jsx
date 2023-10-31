@@ -1,6 +1,6 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import "./../assets/css/ComposantBienvenu.css";
+import { useEffect, useState } from "react"
+import "./../assets/css/ComposantBienvenu.css"
 import imagEcobanck from "../assets/images/ecobank.jpeg";
 import imagOrange from "../assets/images/Orange-Couleur.jpeg";
 import imagMtn from "../assets/images/MTN-Logo.png";

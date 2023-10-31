@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./../assets/css/SideBar.css";
+import "./../assets/css/SideBar.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useLocation } from "react-router-dom";
 function SideBar() {
