@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 
 function Dashbord() {
   return (
-    <div className="Dashbord">
+    <div className="dashboard">
       <Topbar />
       <div className="container-fluid mt-4">
         <div className="row flex-nowrap">

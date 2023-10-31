@@ -35,7 +35,7 @@ const {mutate:entreprise} = useMutation({
   onSuccess: (success)=>{
       toast.success(success.data.message)
       setTimeout(()=>{
-          navigate('/dashbord')
+          navigate('/dashboard')
       },3050)
       },
   onError: (e)=>{

@@ -31,7 +31,7 @@ function Connexion() {
       Cookie.set("token", succes.data.token, { expires: 3600 * 24 });
       setTimeout(() => {
         sessionStorage.setItem("token", JSON.stringify(succes.data.id));
-        navigate("/dashbord");
+        navigate("/dashboard");
       }, 3000);
     },
     onError: (e) => {

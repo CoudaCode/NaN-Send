@@ -20,8 +20,8 @@ function SideBar() {
           id="menu">
           <li className="nav-item">
             <Link
-              to="/dashbord"
-              id={active === "/dashbord" ? "ClickHover" : ""}
+              to="/dashboard"
+              id={active === "/dashboard" ? "ClickHover" : ""}
               className="nav-link align-middle px-0">
               <i className="fa-solid fa-border-all"></i>{" "}
               <span className="ms-1 d-none d-sm-inline">Dashboard</span>
