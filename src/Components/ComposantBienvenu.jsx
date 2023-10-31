@@ -25,31 +25,7 @@ import imgslid7 from "../assets/images/slid7.jpg";
 import "./../assets/css/composantBienvenu.css"
 
 function ComposantBienvenu() {
-  const [slidIndex, setSlidIndex] = useState(0);
-
-  useEffect(() => {
-    const fonctionSlid = () => {
-      const slid = document.querySelectorAll(".slid");
-      for (let i = 0; i < slid.length; i++) {
-        slid[i].style.display = "none";
-      }
-
-      setSlidIndex((slidIndex) => {
-        let nextIndex = slidIndex + 1;
-        if (nextIndex >= slid.length) {
-          nextIndex = 0;
-        }
-        slid[nextIndex].style.display = "block";
-        return nextIndex;
-      });
-    };
-
-    const intervalId = setInterval(fonctionSlid, 2000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
+  
   return (
     <div className="ComposantBienvenu">
       <div className="article">

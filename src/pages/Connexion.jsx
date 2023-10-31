@@ -1,11 +1,6 @@
+import "./../assets/css/Connexion.css";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import Cookie from "js-cookie";
-import axios from "axios";
 
 import "./../assets/css/connexion.css"
 function Connexion() {
@@ -42,46 +37,43 @@ function Connexion() {
 
   const onSubmit = (data) => loginUser(data);
   return (
+
+    
     <>
-      <div className="Connexion">
-        <div className="container">
-          <div className="heading">Connexion</div>
-          <form action="" className="form" onSubmit={handleSubmit(onSubmit)}>
+      <div className='Connexion'>
+        <div className='container'>
+          <div className='heading'>Connexion</div>
+          <form action='' className='form'>
             <input
-              {...register("email", {
-                required: "svp votre  Email",
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: "svp entrer un mail valide",
-                },
-              })}
-              className="input"
-              type="email"
-              id="email"
-              placeholder="Adresse Email"
+              required=''
+              className='input'
+              type='email'
+              name='email'
+              id='email'
+              placeholder='Adresse Email'
             />
             <input
-              required=""
-              className="input"
-              type="password"
-              id="password"
-              placeholder="Mot de Passe"
-              {...register("password", { required: true })}
+              required=''
+              className='input'
+              type='password'
+              name='password'
+              id='password'
+              placeholder='Mot de Passe'
             />
-            <span className="forgot-password">
-              <a href="#">Mot de passe oublié ?</a>
+            <span className='forgot-password'>
+              <a href='#'>Mot de passe oublié ?</a>
             </span>
             <input
-              className="login-button"
-              type="submit"
-              value="Se connecter"
+              className='login-button'
+              type='submit'
+              value='Se connecter'
             />
           </form>
-          <div className="social-account-container">
-            <span className="title">Ou connectez-vous avec</span>
-            <div className="social-accounts">
+          <div className='social-account-container'>
+            <span className='title'>Ou connectez-vous avec</span>
+            <div className='social-accounts'>
               <Link>
-                <button className="social-button google">
+                <button className='social-button google'>
                   <span>{<FcGoogle />}</span>
                 </button>
               </Link>

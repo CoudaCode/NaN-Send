@@ -1,4 +1,7 @@
-import Topbar from "./../Components/Topbar";
+
+import "./../assets/css/WorkSpace.css";
+
+import Topbar from "./../components/Topbar";
 import SideBar from "../Components/SideBar";
 
 import "./../assets/css/workSpace.css";

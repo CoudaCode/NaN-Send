@@ -1,5 +1,6 @@
 
-import Topbar from "./../Components/Topbar"
+import "./../assets/css/MessageComponant.css";
+import Topbar from "../components/Topbar";
 import SideBar from "../Components/SideBar";
 
 import "./../assets/css/messageComponant.css"
