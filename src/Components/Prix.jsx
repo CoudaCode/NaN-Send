@@ -1,5 +1,4 @@
-import "./../assets/css/Prix.css"
-import "./../assets/css/sideBar.css"
+import "./../assets/css/prix.css"
 function Prix() {
   return <div className="Prix">Prix</div>;
 }
