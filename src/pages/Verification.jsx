@@ -1,6 +1,7 @@
 import whatsap from "./../assets/images/whatsapp.jpeg";
 import Mail from "./../assets/images/Mail.png";
 import sms from "./../assets/images/sms.png";
+
 import "./../assets/css/verification.css"
 function Verification() {
   return (
