@@ -1,4 +1,3 @@
-import "./../assets/css/contact.css"
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -7,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Cookie from "js-cookie";
 import axios from "axios";
+import "./../assets/css/connexion.css"
 function Connexion() {
   const navigate = useNavigate();
   const login = async (data) => {

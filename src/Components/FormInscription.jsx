@@ -1,4 +1,3 @@
-import "./../assets/css/formInscription.css"
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +5,7 @@ import { toast } from "react-toastify";
 import Cookies from "js-cookie";
 import axios from "axios";
 const url = "https://nan-send-api.onrender.com";
+import "./../assets/css/formInscription.css"
 
 
 function FormInscription() {

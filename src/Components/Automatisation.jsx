@@ -1,5 +1,4 @@
 import React from "react";
-import "./../assets/css/automatisation.css"
 import { RxHamburgerMenu, RxTarget } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiTimeFive, BiMicrophone } from "react-icons/bi";
@@ -14,6 +13,7 @@ import { MdInsertEmoticon } from "react-icons/md";
 import things from "./../assets/images/pourDashboard.jpeg";
 import img1 from "./../assets/images/Message.png";
 import img2 from "./../assets/images/callCenter.jpeg";
+import "./../assets/css/automatisation.css"
 function Automatisation() {
   return (
     <div className='Automatisation'>

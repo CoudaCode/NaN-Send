@@ -1,8 +1,8 @@
 
-import "../assets/css/dashboard.css"
 import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 
+import "../assets/css/dashboard.css"
 function Dashbord() {
   return (
     <div className="dashboard">

@@ -1,7 +1,7 @@
 
-import "./../assets/css/reports.css"
 import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
+import "./../assets/css/reports.css"
 function Reports() {
   return (
     <>

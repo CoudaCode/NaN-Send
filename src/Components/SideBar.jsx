@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./../assets/css/sideBar.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useLocation } from "react-router-dom";
+import "./../assets/css/sideBar.css"
 function SideBar() {
   const path = useLocation().pathname;
   const [active, setActive] = useState(path);

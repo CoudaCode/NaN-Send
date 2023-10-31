@@ -1,6 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import "./../assets/css/composantBienvenu.css";
+import { useEffect, useState } from "react"
 import imagEcobanck from "../assets/images/ecobank.jpeg";
 import imagOrange from "../assets/images/Orange-Couleur.jpeg";
 import imagMtn from "../assets/images/MTN-Logo.png";
@@ -23,6 +22,7 @@ import imgslid4 from "../assets/images/slid4.jpg";
 import imgslid5 from "../assets/images/slid5.jpg";
 import imgslid6 from "../assets/images/slid6.jpg";
 import imgslid7 from "../assets/images/slid7.jpg";
+import "./../assets/css/composantBienvenu.css"
 
 function ComposantBienvenu() {
   const [slidIndex, setSlidIndex] = useState(0);
