@@ -3,6 +3,7 @@ import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
+
 import "./../assets/css/broadcasts.css"
 function Broadcasts() {
   return (
