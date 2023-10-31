@@ -1,6 +1,5 @@
 
-import "./../assets/css/Contact.css";
-
+import "./../assets/css/contact.css"
 import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 function Contact() {
