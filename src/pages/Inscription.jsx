@@ -94,16 +94,16 @@ let onSubmit = data=> user(data);
             {...register("password",{require:true, minLength:2,maxLength:50, })}
             placeholder="Mot de Passe"
           />
-          <span className="forgot-password">
-            <a href="#">Mot de passe oublié ?</a>
+          <span className='forgot-password'>
+            <a href='#'>Mot de passe oublié ?</a>
           </span>
-          <input className="login-button" type="submit" value="S'inscrire" />
+          <input className='login-button' type='submit' value="S'inscrire" />
         </form>
-        <div className="social-account-container">
-          <span className="title">Ou connectez-vous avec</span>
-          <div className="social-accounts">
+        <div className='social-account-container'>
+          <span className='title'>Ou connectez-vous avec</span>
+          <div className='social-accounts'>
             <Link>
-              <button className="social-button google">
+              <button className='social-button google'>
                 <span>{<FcGoogle />}</span>
               </button>
             </Link>

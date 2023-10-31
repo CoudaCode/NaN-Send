@@ -1,9 +1,10 @@
 // import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
-import { useState, useEffect } from "react";
 
 import "./../assets/css/Navbar.css";
-//ok
+
+import { useState, useEffect } from "react";
+
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -32,47 +33,47 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="main-header">
-      <div className="container-fluid maNav">
-        <nav className="navbar navbar-expand-lg main-nav">
-          <a href="#" className="logo">
-            <span className="log-msg">{<BiSolidMessageRoundedDots />}</span>
-            <span className="log1">NaN-</span>
-            <span className="log2">SEND</span>
+    <header className='main-header'>
+      <div className='container-fluid maNav'>
+        <nav className='navbar navbar-expand-lg main-nav'>
+          <a href='#' className='logo'>
+            <span className='log-msg'>{<BiSolidMessageRoundedDots />}</span>
+            <span className='log1'>NaN-</span>
+            <span className='log2'>SEND</span>
           </a>
           <button
-            className="navbar-toggler"
-            type="button"
+            className='navbar-toggler'
+            type='button'
             onClick={toggleMenu}
-            aria-controls="mainMenu"
+            aria-controls='mainMenu'
             aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation">
-            <span className="icon-bar icon-bar-1"></span>
-            <span className="icon-bar icon-bar-2"></span>
-            <span className="icon-bar icon-bar-3"></span>
+            aria-label='Toggle navigation'>
+            <span className='icon-bar icon-bar-1'></span>
+            <span className='icon-bar icon-bar-2'></span>
+            <span className='icon-bar icon-bar-3'></span>
           </button>
           <div
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
-            id="mainMenu">
-            <ul className="navbar-nav ms-5 text-uppercase f1">
+            id='mainMenu'>
+            <ul className='navbar-nav ms-5 text-uppercase f1'>
               <li>
-                <a href="#home" className="active active-first">
+                <a href='#home' className='active active-first'>
                   Accueil
                 </a>
               </li>
               <li>
-                <a href="#about">À propos</a>
+                <a href='#about'>À propos</a>
               </li>
               <li>
-                <a href="#service">Services</a>
+                <a href='#service'>Services</a>
               </li>
               <li>
-                <a href="#service">Prix</a>
+                <a href='#service'>Prix</a>
               </li>
               <li>
-                <a href="#project">Contact</a>
+                <a href='#project'>Contact</a>
               </li>
             </ul>
           </div>

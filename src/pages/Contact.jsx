@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./../assets/css/Contact.css";
 import Topbar from "../components/Topbar";
 import SideBar from "../Components/SideBar";
-import Popup from "../Components/Popup";
+import PopupContact from "../Components/PopupContact";
 
 function Contact() {
   const data = [
@@ -208,8 +208,7 @@ function Contact() {
       setCurrentPage(page);
     }
   };
-
-  const [isTeamPopupOpen, setIsTeamPopupOpen] = useState(false);
+  const [isTeamContactOpen, setIsTeamPopupOpen] = useState(false);
 
   const handleAddTeamClick = () => {
     setIsTeamPopupOpen(true);
@@ -231,53 +230,53 @@ function Contact() {
   };
 
   return (
-    <div className="Contact">
+    <div className='Contact'>
       <Topbar />
-      <div className="container-fluid mt-4">
-        <div className="row flex-nowrap">
+      <div className='container-fluid mt-4'>
+        <div className='row flex-nowrap'>
           <SideBar />
-          <div className="col py-3 cardRassemblement">
-            <div className="container mx-auto p-8">
-              <div className="flex flex-col md:flex-row md:items-center">
-                <div className="mb-4 md:mr-4 justify-around">
+          <div className='col py-3 cardRassemblement'>
+            <div className='container mx-auto p-8'>
+              <div className='flex flex-col md:flex-row md:items-center'>
+                <div className='mb-4 md:mr-4 justify-around'>
                   <input
-                    type="search"
-                    name="search"
-                    id="search"
-                    className="px-3 py-2 border rounded-lg focus:outline-none focus:ring text-black focus:border-blue-500 w-full md:w-64"
-                    placeholder="Rechercher par nom"
+                    type='search'
+                    name='search'
+                    id='search'
+                    className='px-3 py-2 border rounded-lg focus:outline-none focus:ring text-black focus:border-blue-500 w-full md:w-64'
+                    placeholder='Rechercher par nom'
                     value={searchTerm}
                     onChange={handleSearch}
                   />
                 </div>
-                <div className="flex md:mt-0 mb-4 md:space-x-2 md:justify-end">
+                <div className='flex md:mt-0 mb-4 md:space-x-2 md:justify-end'>
                   <button
                     // onClick={handleExportContacts}
-                    className="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600">
+                    className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'>
                     Exporter les contacts
                   </button>
                   <button
                     onClick={handleAddTeamClick}
-                    className="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600">
-                    Ajouter Team
+                    className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'>
+                    Ajouter Contact
                   </button>
                 </div>
               </div>
 
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left text-gray-500">
-                  <thead className="text-xs text-gray-700 uppercase bg-gray-50">
-                    <tr className="bg-white border-b">
-                      <th className="px-6 py-3">Nom</th>
-                      <th className="px-6 py-3">Prénom</th>
-                      <th className="px-6 py-3">Email</th>
-                      <th className="px-6 py-3">WhatsApp</th>
-                      <th className="px-6 py-3">Langues</th>
-                      <th className="px-6 py-3">Pays</th>
-                      <th className="px-6 py-3">Actions</th>
+              <div className='overflow-x-auto'>
+                <table className='w-full text-sm text-left text-gray-500'>
+                  <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
+                    <tr className='bg-white border-b'>
+                      <th className='px-6 py-3'>Nom</th>
+                      <th className='px-6 py-3'>Prénom</th>
+                      <th className='px-6 py-3'>Email</th>
+                      <th className='px-6 py-3'>WhatsApp</th>
+                      <th className='px-6 py-3'>Langues</th>
+                      <th className='px-6 py-3'>Pays</th>
+                      <th className='px-6 py-3'>Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white border-b">
+                  <tbody className='bg-white border-b'>
                     {filteredData
                       .filter((item) =>
                         item.nom
@@ -289,21 +288,21 @@ function Contact() {
                         currentPage * itemsPerPage
                       )
                       .map((item) => (
-                        <tr key={item.id} className="border border-gray-200">
-                          <td className="px-6 py-4">{item.nom}</td>
-                          <td className="px-6 py-4">{item.prenom}</td>
-                          <td className="px-6 py-4">{item.email}</td>
-                          <td className="px-6 py-4">{item.whatsapp}</td>
-                          <td className="px-6 py-4">{item.langues}</td>
-                          <td className="px-6 py-4">{item.pays}</td>
-                          <td className="px-6 py-4">
+                        <tr key={item.id} className='border border-gray-200'>
+                          <td className='px-6 py-4'>{item.nom}</td>
+                          <td className='px-6 py-4'>{item.prenom}</td>
+                          <td className='px-6 py-4'>{item.email}</td>
+                          <td className='px-6 py-4'>{item.whatsapp}</td>
+                          <td className='px-6 py-4'>{item.langues}</td>
+                          <td className='px-6 py-4'>{item.pays}</td>
+                          <td className='px-6 py-4'>
                             <button
-                              className="px-2 py-1 bg-purple-500 text-white rounded-md ml-2"
+                              className='px-2 py-1 bg-purple-500 text-white rounded-md ml-2'
                               onClick={() => handleEdit(item.id)}>
                               Modifier
                             </button>
                             <button
-                              className="px-2 md:ml-2 py-1 ml-2 bg-black text-white rounded-md"
+                              className='px-2 md:ml-2 py-1 ml-2 bg-black text-white rounded-md'
                               onClick={() => handleDelete(item.id)}>
                               Supprimer
                             </button>
@@ -313,7 +312,7 @@ function Contact() {
                   </tbody>
                 </table>
               </div>
-              <div className="mt-4 flex justify-center items-center">
+              <div className='mt-4 flex justify-center items-center'>
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   className={`px-3 py-2 ${
@@ -323,7 +322,7 @@ function Contact() {
                   } rounded-md mr-2`}>
                   &#8592;
                 </button>
-                <span className="text-lg font-medium">{currentPage}</span>
+                <span className='text-lg font-medium'>{currentPage}</span>
                 <button
                   onClick={() => handlePageChange(currentPage + 1)}
                   className={`px-3 py-2 ${
@@ -339,8 +338,8 @@ function Contact() {
         </div>
       </div>
 
-      <Popup
-        isOpen={isTeamPopupOpen}
+      <PopupContact
+        isOpen={isTeamContactOpen}
         onClose={() => setIsTeamPopupOpen(false)}
       />
     </div>

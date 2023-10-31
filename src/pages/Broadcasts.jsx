@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
-import Popup from "../Components/Popup"; // Importez le composant de popup ici
+import PopupBraodcoast from "../Components/PopupBraodcoast"; // Importez le composant de popup ici
 
 function Broadcasts() {
   const data = [
@@ -81,13 +81,14 @@ function Broadcasts() {
   };
 
   return (
-    <div className='Broadcasts'>
+    <div className="Broadcasts">
       <Topbar />
-      <div className='container-fluid mt-4'>
-        <div className='row flex-nowrap'>
+      <div className="container-fluid mt-4">
+        <div className="row flex-nowrap">
           <SideBar />
-          <div className='col py-3 cardRassemblement'>
-             <div className='addBouton flex'>
+          <div className="col py-3 cardRassemblement">
+            <div className="container mx-auto p-8">
+              <div className=" w-full flex ">
                 <div className="mb-4">
                   <select
                     id="channel"
@@ -178,80 +179,12 @@ function Broadcasts() {
                   &#8594;
                 </button>
               </div>
-
-            <div className='container mx-auto p-8'>
-              <div className='mb-4'>
-                <select
-                  id='channel'
-                  className='p-2 rounded-md border-gray-300 text-gray-600'
-                  value={filter}
-                  onChange={handleChangeFilter}>
-                  <option value='all'>Tous les canaux</option>
-                  <option value='Whatsapp'>Whatsapp</option>
-                  <option value='Email'>Email</option>
-                  <option value='SMS'>SMS</option>
-                </select>
-              </div>
-              <div className='overflow-x-auto'>
-                <table className='w-full text-sm text-left text-gray-500'>
-                  <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
-                    <tr className='bg-white border-b'>
-                      <th className='px-6 py-3'>Nom</th>
-                      <th className='px-6 py-3'>Canal</th>
-                      <th className='px-6 py-3'>Nombre de membres</th>
-                    </tr>
-                  </thead>
-                  <tbody className='bg-white border-b'>
-                    {filteredData
-                      .slice(
-                        (currentPage - 1) * itemsPerPage,
-                        currentPage * itemsPerPage
-                      )
-                      .map((item) => (
-                        <tr key={item.id} className='border border-gray-200'>
-                          <td className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
-                            {item.name}
-                          </td>
-                          <td className='px-6 py-4'>
-                            <img
-                              className='inline-block h-12 w-12 rounded-full '
-                              src={whatsapp}
-                              alt={item.channel}
-                            />
-                          </td>
-                          <td className='px-6 py-4'>{item.members}</td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className='mt-4 flex justify-center items-center'>
-                <button
-                  onClick={() => handlePageChange(currentPage - 1)}
-                  className={`px-3 py-2 ${
-                    currentPage === 1
-                      ? "bg-gray-200 text-gray-600"
-                      : "bg-blue-500 text-white"
-                  } rounded-md mr-2`}>
-                  &#8592;
-                </button>
-                <span className='text-lg font-medium'>{currentPage}</span>
-                <button
-                  onClick={() => handlePageChange(currentPage + 1)}
-                  className={`px-3 py-2 ${
-                    currentPage === maxPages
-                      ? "bg-gray-200 text-gray-600"
-                      : "bg-blue-500 text-white"
-                  } rounded-md ml-2`}>
-                  &#8594;
-                </button>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <Popup
+      <PopupBraodcoast
         isOpen={isTeamPopupOpen}
         onClose={() => setIsTeamPopupOpen(false)}
       />
