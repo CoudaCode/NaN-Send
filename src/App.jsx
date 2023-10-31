@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Acceuil from "./pages/Acceuil";
+import Acceuil from "./pages/Acceuil"
 import Dashbord from "./pages/Dashbord";
 import Contact from "./pages/Contact";
 import Connexion from "./pages/Connexion";
@@ -18,6 +18,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Acceuil />} />
+        
         <Route path="/dashboard" element={<Dashbord />} />
         <Route path="/broadcasts" element={<Broadcasts />} />
         <Route path="/contact" element={<Contact />} />
