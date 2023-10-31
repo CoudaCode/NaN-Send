@@ -1,5 +1,5 @@
 import "./../assets/css/Broadcasts.css";
-import TopBar from "../components/Topbar";
+import Topbar from "./../Components/Topbar"
 import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
@@ -7,13 +7,13 @@ import gmail from "./../assets/images/email.png";
 function Broadcasts() {
   return (
     <div className="Broadcasts">
-      <TopBar />
+      <Topbar />
       <div className="container-fluid mt-4">
         <div className="row flex-nowrap">
           <SideBar />
           <div className="col py-3 cardRassemblement">
             <div className="addBouton">
-              <button class="py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75">
+              <button className="py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75">
                 <i className="fas fa-plus"></i>
                 créer une diffusion
               </button>

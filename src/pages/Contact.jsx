@@ -1,5 +1,6 @@
-import React from "react";
-import "./../assets/css/contact.css";
+
+import "./../assets/css/Contact.css";
+
 import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 function Contact() {
