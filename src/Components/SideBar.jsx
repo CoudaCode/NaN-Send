@@ -1,55 +1,5 @@
-// import React from "react";
-// import { Link, useLocation } from "react-router-dom";
-
-// function SideBar() {
-//   const path = useLocation().pathname;
-
-//   return (
-//     <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-none min-h-screen">
-//       <div className="bg-white text-white min-h-60 flex flex-col justify-start items-center sm:items-start px-3 rounded-4 pt-2">
-//         <Link to="/" className="text-white text-decoration-none pb-3 mb-sm-0 me-sm-auto">
-//           <span className="text-lg hidden sm:inline">Menu</span>
-//         </Link>
-//         <ul className="nav nav-pills flex-col mb-sm-0 mb-0 sm:items-start" id="menu">
-//           <li className="nav-item">
-//             <Link
-//               to="/dashbord"
-//               className={`nav-link align-middle px-0 ${active === "/dashbord" ? "text-purple-600" : ""}`}
-//             >
-//               <i className="fa-solid fa-border-all"></i>{" "}
-//               <span className="ms-1 hidden sm:inline">Dashboard</span>
-//             </Link>
-//           </li>
-//           <li className="nav-item">
-//             <Link to="/contact" className={`nav-link align-middle px-0 ${active === "/contact" ? "text-purple-600" : ""}`}>
-//               <i className="fa-solid fa-users"></i>{" "}
-//               <span className="ms-1 hidden sm:inline">Contacts</span>
-//             </Link>
-//           </li>
-//           <li className="nav-item">
-//             <Link
-//               to="/message"
-//               className={`nav-link align-middle px-0 ${active === "/message" ? "text-purple-600" : ""}`}
-//             >
-//               <i className="fa-solid fa-clipboard-list"></i>{" "}
-//               <span className="ms-1 hidden sm:inline">Messages</span>
-//             </Link>
-//           </li>
-//           {/* Ajoutez les autres liens ici avec les classes d'onglet actif en conséquence */}
-//         </ul>
-//         <hr />
-//       </div>
-//       <div className="dropdown rounded-4 m-2 p-4 bg-white absolute bottom-0 start-0" id="btnBottom">
-//         <h5>NAN DIGITAL ACADEMY</h5>
-//         <h6>Version: 1.0.0.11</h6>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default SideBar;
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import {
   FaBorderAll,
   FaUsers,
@@ -66,16 +16,23 @@ function SideBar() {
 
   const sidebarLinks = [
     { path: "/dashbord", text: "Dashboard", icon: <FaBorderAll /> },
+
     { path: "/contact", text: "Contacts", icon: <FaUsers /> },
+
     { path: "/message", text: "Messages", icon: <FaClipboardList /> },
+
     { path: "/broadcasts", text: "Broadcasts", icon: <FaCalendar /> },
+
     { path: "/profile", text: "Profiles", icon: <FaUserCircle /> },
+
     {
       path: "/workspace",
       text: "Workspace setting",
       icon: <FaHourglassStart />,
     },
+
     { path: "/reports", text: "Reports", icon: <FaComments /> },
+
     { path: "/", text: "Déconnexion", icon: <FaArrowLeft /> },
   ];
 
@@ -87,6 +44,7 @@ function SideBar() {
           className="text-violet-500 text-decoration-none pb-3 mb-sm-0 me-sm-auto">
           <span className="text-lg hidden sm:inline">Menu</span>
         </Link>
+
         <ul
           className="nav nav-pills flex-col mb-sm-0 mb-0 sm:items-start"
           id="menu">
@@ -101,6 +59,7 @@ function SideBar() {
                 }`}>
                 <span className="flex items-center">
                   {link.icon}
+
                   <span
                     className={`ml-2 hidden sm:inline ${
                       path === link.path ? "text-red-300" : "text-gray-700"
@@ -112,16 +71,19 @@ function SideBar() {
             </li>
           ))}
         </ul>
+
         <hr />
       </div>
+
       <div
         className="dropdown rounded-4 m-2 p-4 bg-white absolute bottom-0 start-0"
         id="btnBottom">
         <h5>NAN DIGITAL ACADEMY</h5>
+
         <h6>Version: 1.0.0.11</h6>
       </div>
     </div>
   );
 }
- 
+
 export default SideBar;

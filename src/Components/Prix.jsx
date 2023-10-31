@@ -1,5 +1,3 @@
-import React from "react";
-
 const Prix = () => {
   return (
     <div className="Prix pricing-table-2 bg-gray-800 py-6 md:py-12">
