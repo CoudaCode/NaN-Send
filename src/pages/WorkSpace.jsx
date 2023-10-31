@@ -1,4 +1,4 @@
-import "./../assets/css/WorkSpace.css"
+import "./../assets/css/workSpace.css";
 import Topbar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 function WorkSpace() {

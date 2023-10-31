@@ -1,6 +1,6 @@
-import React from "react";
-import "./../assets/css/MessageComponant.css";
-import Topbar from "../components/Topbar";
+
+import "./../assets/css/messageComponant.css"
+import Topbar from "./../Components/Topbar"
 import SideBar from "../Components/SideBar";
 
 function MessageComponant() {

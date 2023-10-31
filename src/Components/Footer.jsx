@@ -1,5 +1,5 @@
 import imgLogo from "./../assets/images/log.png";
-import "./../assets/css/Footer.css";
+import "./../assets/css/footer.css"
 import {
   FaCheck,
   FaFacebook,

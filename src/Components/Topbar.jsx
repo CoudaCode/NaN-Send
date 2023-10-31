@@ -1,7 +1,7 @@
 
 import person from "../assets/images/person.jpg";
-import "./../assets/css/Topbar.css"
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./../assets/css/topbar.css";
 
 
 function Topbar() {

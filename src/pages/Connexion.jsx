@@ -1,4 +1,4 @@
-import "./../assets/css/Connexion.css";
+import "./../assets/css/connexion.css"
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";

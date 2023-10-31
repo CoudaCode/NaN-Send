@@ -1,5 +1,5 @@
 import React from "react";
-import "./../assets/css/Automatisation.css"
+import "./../assets/css/automatisation.css"
 import { RxHamburgerMenu, RxTarget } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiTimeFive, BiMicrophone } from "react-icons/bi";

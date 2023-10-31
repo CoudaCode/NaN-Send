@@ -1,5 +1,5 @@
 import {useForm} from "react-hook-form";
-import "./../assets/css/Inscription.css";
+import "./../assets/css/inscription.css"
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";

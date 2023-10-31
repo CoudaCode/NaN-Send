@@ -1,5 +1,5 @@
 
-import "../assets/css/Dashbord.css"
+import "../assets/css/dashboard.css"
 import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 

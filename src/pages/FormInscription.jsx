@@ -1,4 +1,4 @@
-import "./../assets/css/FormInscription.css"
+import "./../assets/css/formInscription.css"
 function FormInscription() {
   return (
     <div className="FormInscription">

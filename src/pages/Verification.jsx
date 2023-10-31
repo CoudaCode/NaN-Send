@@ -1,4 +1,4 @@
-import "./../assets/css/Verification.css"
+import "./../assets/css/verification.css"
 import whatsap from "./../assets/images/whatsapp.jpeg";
 import Mail from "./../assets/images/Mail.png";
 import sms from "./../assets/images/sms.png";

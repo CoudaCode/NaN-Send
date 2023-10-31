@@ -1,13 +1,12 @@
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./../assets/css/Navbar.css"
+import "./../assets/css/navbar.css"
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-    
   };
 
   const handleScroll = (nav) => {

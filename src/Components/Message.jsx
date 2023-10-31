@@ -1,5 +1,5 @@
 
-import "./../assets/css/Message.css"
+import "./../assets/css/message.css"
 import images from "../assets/images/whatsapp1.png";
 function Message() {
   return (

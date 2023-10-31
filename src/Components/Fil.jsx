@@ -1,4 +1,4 @@
-import "./../assets/css/Fil.css"
+import "./../assets/css/fil.css"
 import { Link } from "react-router-dom";
 function Fil() {
   return (
