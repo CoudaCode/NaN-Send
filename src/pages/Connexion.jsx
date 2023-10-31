@@ -39,7 +39,6 @@ function Connexion() {
       toast.error(e.response.data.message);
     },
   });
-
   const onSubmit = (data) => loginUser(data);
   return (
     <>
