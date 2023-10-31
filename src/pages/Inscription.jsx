@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom/dist";
 import Cookies from "js-cookie";
 const url = "https://nan-send-api.onrender.com";
+
 import "./../assets/css/inscription.css"
 
 
