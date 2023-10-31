@@ -1,141 +1,88 @@
 import React from "react";
 import "./../assets/css/FormInscription.css";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import Cookies from "js-cookie";
-import axios from "axios";
-const url = "https://nan-send-api.onrender.com";
-
-
 function FormInscription() {
-  let token = Cookies.get('token')
-  let navigate = useNavigate();
-  const {register, handleSubmit, watch ,formState:{errors}} = useForm({
-  raisonSociale:'',
-  domaineDActivite:'',
-  adresse:'',
-  type:'',
-  nationalite:'',
-  password:''
-})
-
-const {mutate:entreprise} = useMutation({
-  mutationFn: async (send)=>{
-      console.log("ok", send)
-
-      let response = await axios.post(`${url}/api/entreprise/create`,send,{
-        headers:{
-          'Authorization': `token ${token}`
-        }
-      });
-      return response;
-  },
-  onSuccess: (success)=>{
-      toast.success(success.data.message)
-      setTimeout(()=>{
-          navigate('/dashbord')
-      },3050)
-      },
-  onError: (e)=>{
-    toast.error(e.response.data.message)
-    // toast.errors(erro)
-      // setErrorMessage(errors.response)
-  }
-})
-
-let onSubmit = data=>entreprise(data);
   return (
     <div className="FormInscription">
       <div className="ensemble">
-        <form action="" onSubmit={handleSubmit(onSubmit)}>
         <div className="form">
+          <div className="code">
+            <label htmlFor="name" style={{ color: "#6870e0" }}>
+              Créons votre organisation, XXXXXXXXXXXX !
+            </label>
+            <input
+              required=""
+              autoComplete="off"
+              type="text"
+              placeholder="********************"
+            />
+          </div>
+
           <div className="input">
             <p htmlFor="email" style={{ color: "#6870e0" }}>
               Complétez vos coordonnées pour commencer.
             </p>
           </div>
           <section className="cadre">
-          <div className="input">
-           
-            <input
-              required=""
-              autoComplete="off"
-              type="text"
-              id="raisonSociale"
-              {...register("raisonSociale",{require:true, minLength:2,maxLength:50, })}
-            />
-             <label htmlFor="name" >
-             Raison Social!
-            </label>
-          </div>
             <div className="input">
               <input
                 required=""
                 autoComplete="off"
                 type="text"
-                id="domaineDActivite"
-                {...register("domaineDActivite",{require:true, minLength:2,maxLength:50, })}
+                style={{ width: "70%" }}
               />
-              <label htmlFor="domaineDActivite">Domaine d'activité</label>
+              <label htmlFor="name">Nom</label>
             </div>
             <div className="input">
               <input
                 required=""
                 autoComplete="off"
                 type="text"
-                {...register("adresse",{require:true, minLength:2,maxLength:50, })}
+                style={{ width: "70%" }}
               />
-              <label htmlFor="adresse">Adresse</label>
+              <label htmlFor="name">Site web</label>
             </div>
-            {/* <div className="input">
+            <div className="input">
               <input
                 required=""
                 autoComplete="off"
                 type="number"
                 placeholder="+225 --- --- --- -"
                 style={{ width: "70%" }}
-                {...register("fullname",{require:true, minLength:2,maxLength:50, })}
               />
               <label htmlFor="name">Numéro de téléphone</label>
-            </div> */}
+            </div>
             <div className="input">
               <input
-                type="text"
-                id="type"
-                name="type"
+                type="number"
+                id="taille_cm"
+                name="taille_cm"
                 step="0.01"
                 min="0"
-                
-                {...register("type",{require:true, minLength:2,maxLength:50, })}
+                style={{ width: "70%" }}
               />
-              <label htmlFor="types">Type d'entreprise</label>
+              <label htmlFor="taille_cm">Taille</label>
             </div>
             <div className="input">
               <input
                 required=""
                 autoComplete="off"
                 type="text"
-                id="emailInfo"
-                {...register("emailInfo",{require:true, minLength:2,maxLength:50, })}
+                style={{ width: "70%" }}
               />
-              <label htmlFor="name">Email de l'entreprise</label>
+              <label htmlFor="name">Industrie</label>
             </div>
             <div className="input">
               <input
                 required=""
                 autoComplete="off"
                 type="text"
-                {...register("passwordEmailInfo",{require:true, minLength:2,maxLength:50, })}
+                style={{ width: "70%" }}
               />
-              <label htmlFor="name">Password de votre mail</label>
-              <button type="submit">Enregister Entreprise</button>
+              <label htmlFor="name">Role</label>
+              <button>Etape suivante →</button>
             </div>
           </section>
         </div>
-        </form>
-        
       </div>
     </div>
   );

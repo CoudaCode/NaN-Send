@@ -1,6 +1,7 @@
+// import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import "./../assets/css/Navbar.css";
 
 function Navbar() {
@@ -8,7 +9,6 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-    
   };
 
   const handleScroll = (nav) => {
@@ -41,38 +41,38 @@ function Navbar() {
             <span className="log2">SEND</span>
           </a>
           <button
-            className='navbar-toggler'
-            type='button'
+            className="navbar-toggler"
+            type="button"
             onClick={toggleMenu}
-            aria-controls='mainMenu'
+            aria-controls="mainMenu"
             aria-expanded={isMenuOpen}
-            aria-label='Toggle navigation'>
-            <span className='icon-bar icon-bar-1'></span>
-            <span className='icon-bar icon-bar-2'></span>
-            <span className='icon-bar icon-bar-3'></span>
+            aria-label="Toggle navigation">
+            <span className="icon-bar icon-bar-1"></span>
+            <span className="icon-bar icon-bar-2"></span>
+            <span className="icon-bar icon-bar-3"></span>
           </button>
           <div
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
             id="mainMenu">
-           <ul className="navbar-nav ms-5 text-uppercase f1">
+            <ul className="navbar-nav ms-5 text-uppercase f1">
               <li>
-                <Link to="#home" className="active active-first meslinks">
+                <a href="#home" className="active active-first">
                   Accueil
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#about" className="meslinks">À propos</Link>
+                <a href="#about">À propos</a>
               </li>
               <li>
-                <Link to="#service" className="meslinks">Services</Link>
+                <a href="#service">Services</a>
               </li>
               <li>
-                <Link to="#service" className="meslinks">Prix</Link>
+                <a href="#service">Prix</a>
               </li>
               <li>
-                <Link to="#project" className="meslinks">Contact</Link>
+                <a href="#project">Contact</a>
               </li>
             </ul>
           </div>

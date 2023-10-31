@@ -5,5 +5,7 @@
   /* max-width: 1280px; */
   margin: 0 auto;
   height: 100vh;
+  box-sizing: border-box;
   background-color: #282c34;
+  color: white;
 }

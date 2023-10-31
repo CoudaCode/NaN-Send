@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
-import PopupBraodcoast from "../Components/PopupBraodcoast"; // Importez le composant de popup ici
+import Popup from "../Components/Popup"; // Importez le composant de popup ici
 
 function Broadcasts() {
   const data = [
@@ -63,6 +63,7 @@ function Broadcasts() {
   const filteredData =
     filter === "all" ? data : data.filter((item) => item.channel === filter);
   const maxPages = Math.ceil(filteredData.length / itemsPerPage);
+
   const handleChangeFilter = (event) => {
     setFilter(event.target.value);
     setCurrentPage(1);
@@ -184,7 +185,7 @@ function Broadcasts() {
         </div>
       </div>
 
-      <PopupBraodcoast
+      <Popup
         isOpen={isTeamPopupOpen}
         onClose={() => setIsTeamPopupOpen(false)}
       />

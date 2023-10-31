@@ -63,7 +63,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-1"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Gerer les conversations entrantes
               </label>
             </div>
@@ -78,7 +79,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-2"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Diffusion WathsApp
               </label>
             </div>
@@ -93,7 +95,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-3"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Annonces Click-to Chat
               </label>
             </div>
@@ -108,7 +111,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-4"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Envoyer des Campagnes Professionnels
               </label>
             </div>
@@ -123,7 +127,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-4"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 WathsApp Business Plusieurs Utilisateurs
               </label>
             </div>
@@ -138,7 +143,8 @@ function Verification() {
               />
               <label
                 htmlFor="country-option-4"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
                 Autre
               </label>
             </div>
