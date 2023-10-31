@@ -1,13 +1,14 @@
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { useState, useEffect } from "react";
-import "./../assets/css/Navbar.css";
 import { Link } from "react-router-dom";
+import "./../assets/css/Navbar.css";
 //ok
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    
   };
 
   const handleScroll = (nav) => {
@@ -45,8 +46,7 @@ function Navbar() {
             onClick={toggleMenu}
             aria-controls="mainMenu"
             aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="icon-bar icon-bar-1"></span>
             <span className="icon-bar icon-bar-2"></span>
             <span className="icon-bar icon-bar-3"></span>
@@ -55,36 +55,24 @@ function Navbar() {
             className={`collapse justify-content-center navbar-collapse ${
               isMenuOpen ? "show" : ""
             }`}
-            id="mainMenu"
-          >
-            {/* <ul className="navbar-nav ms-5 text-uppercase f1">
-              <li className="lin">
-                <Link to="#" className="active active-first">
+            id="mainMenu">
+           <ul className="navbar-nav ms-5 text-uppercase f1">
+              <li>
+                <Link to="#home" className="active active-first meslinks">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link to="/apropos">À propos</Link>
+                <Link to="#about" className="meslinks">À propos</Link>
               </li>
               <li>
-                <Link to="/map" >Services</Link>
+                <Link to="#service" className="meslinks">Services</Link>
               </li>
               <li>
-                <Link to="/prix">Prix</Link>
+                <Link to="#service" className="meslinks">Prix</Link>
               </li>
               <li>
-                <Link to="/map">Contact</Link>
-              </li>
-            </ul> */}
-            <ul>
-              <li>
-                <a href="Accueil"></a>
-              </li>
-              <li>
-                <a href="Accueil"></a>
-              </li>
-              <li>
-                <a href="Accueil"></a>
+                <Link to="#project" className="meslinks">Contact</Link>
               </li>
             </ul>
           </div>

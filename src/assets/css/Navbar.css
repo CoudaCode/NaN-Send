@@ -4,18 +4,20 @@ Navbar.css
 [data-target="#mainMenu"] {
   position: relative;
   z-index: 999;
+
 }
 .maNav {
-  box-shadow: 1px 1px 1px 1px var(--ma-couleur-bouton);
+  
   padding: 0.3rem;
 }
 .scrolled {
   background-color: var(--ma-couleur-bouton);
 }
-.scrolled li a:hover{
+.scrolled li .meslinks:hover{
   color:var(--ma--couleur--text) !important;
 }
-.scrolled #mainMenu li > a::before {
+
+.scrolled #mainMenu li > .meslinks::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -54,7 +56,7 @@ Navbar.css
   font-size: 1.8rem;
 }
 
-#mainMenu .li > Link {
+ .meslinks {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--ma--couleur--text)!important;
@@ -63,18 +65,21 @@ Navbar.css
   z-index: 1;
   text-decoration: none;
 }
-#mainMenu li > Link:hover {
+.meslinks:hover {
   color: var(--ma-couleur-bouton);
 }
 .Navbar .collapse .main-header.fixed-nav #mainMenu li > Link {
   text-decoration: none;
+}
+.collapse{
+  visibility: visible;
 }
 
 #mainMenu li:not(:last-of-type) {
   margin-right: 30px;
 }
 
-#mainMenu li > Link::before {
+#mainMenu li > .meslinks::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -88,13 +93,13 @@ Navbar.css
   transition: transform 0.5s ease;
 }
 
-#mainMenu li > Link:hover::before,
-#mainMenu li > Link.active::before {
+#mainMenu li > .meslinks:hover::before,
+#mainMenu li > .meslinks.active::before {
   transform: scale(1, 1);
   transform-origin: left center;
 }
 
-.main-header.fixed-nav #mainMenu li > Link::before {
+.main-header.fixed-nav #mainMenu li > .meslinks::before {
   background: #000;
 }
 
