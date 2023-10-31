@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Acceuil from "./pages/acceuil";
+import Acceuil from "./pages/Acceuil";
 import Dashbord from "./pages/Dashbord";
 import Contact from "./pages/Contact";
 import Connexion from "./pages/Connexion";

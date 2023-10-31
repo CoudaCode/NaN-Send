@@ -1,8 +1,8 @@
 import React from "react";
 import "./../assets/css/Acceuil.css";
 import ComposantBienvenu from "../Components/ComposantBienvenu";
-import Navbar from "./../Components/Navbar";
-import Footer from "./../Components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import Automatisation from "../Components/Automatisation";
 import Prix from "../Components/Prix";
 import Message from "../Components/Message";
