@@ -30,7 +30,7 @@ function Connexion() {
       toast.success(succes.data.message);
       Cookie.set("token", succes.data.token, { expires: 3600 * 24 });
       setTimeout(() => {
-        sessionStorage.setItem("token", JSON.stringify(succes.data.id));
+        sessionStorage.setItem("userId", JSON.stringify(succes.data.userId));
         navigate("/dashbord");
       }, 3000);
     },
