@@ -106,7 +106,7 @@ function Automatisation() {
           </div>
         </div>
         Franck Olivier Kouame, [30 Oct 2023 at 16:33:03]:
-...{/* DEUXIEME PARTIE */}
+{/* DEUXIEME PARTIE */}
 
         <div className='supervisor'>
           <div className='separe'>
@@ -176,7 +176,7 @@ function Automatisation() {
                   <div className='caro'>
                     <div className='second'>
                       <p>
-                        La vision de NaN repose sur ce que doit être l’avenir de
+                        La vision de NaN repose sur ce que doit être l'avenir de
                         l'Afrique francophone
                       </p>
                       <div className='forImg'>
@@ -194,7 +194,7 @@ function Automatisation() {
                           </div>
                         </div>
                       </div>
-                      ...<div className='bout'>
+                      <div className='bout'>
                         <div className='search'>
                           <AiOutlinePlus />
                           <div className='recher'>
@@ -269,7 +269,7 @@ function Automatisation() {
                           </div>
                         </div>
                       </div>
-                      ...<div className='bout'>
+                      <div className='bout'>
                         <div className='search'>
                           <AiOutlinePlus />
                           <div className='recher'>
@@ -310,9 +310,7 @@ function Automatisation() {
                       </div>
 
                       <div className='bout'>
-                        <d
-
-iv className='search'>
+                        <div className='search'>
 <AiOutlinePlus />
                           <div className='recher'>
                             <input type='text' />
