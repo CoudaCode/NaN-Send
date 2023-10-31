@@ -1,10 +1,15 @@
 import "./../assets/css/Connexion.css";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigation } from "react-router-dom";
+import axios from "axios";
 import "./../assets/css/connexion.css"
+import { useForm } from "react-hook-form";
+import { useMutation } from "@tanstack/react-query";
+import { toast } from "react-toastify";
+import {Cookies} from "js-cookie";
+
 function Connexion() {
-  const navigate = useNavigate();
+  const navigate = useNavigation();
   const login = async (data) => {
     const result = await axios.post(
       "https://nan-send-api.onrender.com/api/user/login",
@@ -23,7 +28,7 @@ function Connexion() {
     onSuccess: (succes) => {
       console.log("demo", succes.data);
       toast.success(succes.data.message);
-      Cookie.set("token", succes.data.token, { expires: 3600 * 24 });
+      Cookies.set("token", succes.data.token, { expires: 3600 * 24 });
       setTimeout(() => {
         sessionStorage.setItem("token", JSON.stringify(succes.data.id));
         navigate("/dashboard");
