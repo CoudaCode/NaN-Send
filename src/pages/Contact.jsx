@@ -1,9 +1,7 @@
-import { useState } from "react";
-import "./../assets/css/Contact.css";
-import Topbar from "../components/Topbar";
-import SideBar from "../Components/SideBar";
-import Popup from "../Components/Popup";
 
+import TopBar from "./../Components/Topbar";
+import SideBar from "../Components/SideBar";
+import "./../assets/css/contact.css"
 function Contact() {
   const data = [
     {

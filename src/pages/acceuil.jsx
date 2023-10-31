@@ -1,13 +1,13 @@
 
-import "./../assets/css/Acceuil.css";
 import ComposantBienvenu from "../Components/ComposantBienvenu";
-import Navbar from "./../Components/Navbar";
-import Footer from "./../Components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import Automatisation from "../Components/Automatisation";
 import Prix from "../Components/Prix";
 import Message from "../Components/Message";
 import Fil from "../Components/Fil";
 import Map from "../Components/Map";
+import "./../assets/css/accueil.css"
 function Acceuil() {
   return (
     <div className="Acceuil">

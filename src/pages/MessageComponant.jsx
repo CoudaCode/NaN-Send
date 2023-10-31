@@ -1,8 +1,8 @@
 
-import "./../assets/css/MessageComponant.css";
-import Topbar from "../components/Topbar";
+import Topbar from "./../Components/Topbar"
 import SideBar from "../Components/SideBar";
 
+import "./../assets/css/messageComponant.css"
 function MessageComponant() {
   return (
     <div className="MessageComponant">

@@ -1,12 +1,10 @@
-import { useState } from "react";
-import "./../assets/css/Broadcasts.css";
-import Topbar from "../components/Topbar";
+import Topbar from "./../Components/Topbar"
 import SideBar from "../Components/SideBar";
 import whatsapp from "../assets/images/whatsapp.jpeg";
 import message from "../assets/images/message.jpg";
 import gmail from "./../assets/images/email.png";
-import Popup from "../Components/Popup"; // Importez le composant de popup ici
 
+import "./../assets/css/broadcasts.css"
 function Broadcasts() {
   const data = [
     { id: 1, name: "John Doe", channel: "Email", members: 25 },
@@ -88,27 +86,29 @@ function Broadcasts() {
         <div className="row flex-nowrap">
           <SideBar />
           <div className="col py-3 cardRassemblement">
-            <div className="container mx-auto p-8">
-              <div className=" w-full flex ">
-                <div className="mb-4">
-                  <select
-                    id="channel"
-                    className="p-2 rounded-md border-gray-300 text-gray-600"
-                    value={filter}
-                    onChange={handleChangeFilter}>
-                    <option value="all">Tous les canaux</option>
-                    <option value="Whatsapp">Whatsapp</option>
-                    <option value="Email">Email</option>
-                    <option value="SMS">SMS</option>
-                  </select>
-                </div>
-                <div className="flex-grow text-right">
-                  <button
-                    onClick={handleAddTeamClick}
-                    className="bg-purple-500 text-white px-4 py-2 rounded-md mb-4">
-                    Ajouter Team
-                  </button>
-                </div>
+            <div className="addBouton">
+              <button className="py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75">
+                <i className="fas fa-plus"></i>
+                créer une diffusion
+              </button>
+
+              <div className="chanal">
+                <img
+                  className="inline-block h-12 w-12 rounded-full "
+                  src={whatsapp}
+                  alt=""
+                />
+                <img
+                  className="inline-block h-12 w-12 rounded-full "
+                  src={message}
+                  alt=""
+                />
+
+                <img
+                  className="inline-block h-12 w-12 rounded-full "
+                  src={gmail}
+                  alt=""
+                />
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left text-gray-500">

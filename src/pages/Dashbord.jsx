@@ -1,12 +1,12 @@
-import React from "react";
-import "./../assets/css/Dashbord.css";
-import Topbar from "./../components/Topbar";
+
+import TopBar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
 
+import "../assets/css/dashboard.css"
 function Dashbord() {
   return (
-    <div className="Dashbord">
-      <Topbar />
+    <div className="dashboard">
+      <TopBar />
       <div className="container-fluid mt-4">
         <div className="row flex-nowrap">
           <SideBar />

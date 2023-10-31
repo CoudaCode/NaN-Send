@@ -1,9 +1,7 @@
-// import { Link } from "react-router-dom";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { useState, useEffect } from "react";
-
-import "./../assets/css/Navbar.css";
-
+import { Link } from "react-router-dom";
+import "./../assets/css/navbar.css"
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -56,23 +54,23 @@ function Navbar() {
               isMenuOpen ? "show" : ""
             }`}
             id="mainMenu">
-            <ul className="navbar-nav ms-5 text-uppercase f1">
+           <ul className="navbar-nav ms-5 text-uppercase f1">
               <li>
-                <a href="#home" className="active active-first">
+                <Link to="#home" className="active active-first meslinks">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about">À propos</a>
+                <Link to="#about" className="meslinks">À propos</Link>
               </li>
               <li>
-                <a href="#service">Services</a>
+                <Link to="#service" className="meslinks">Services</Link>
               </li>
               <li>
-                <a href="#service">Prix</a>
+                <Link to="#service" className="meslinks">Prix</Link>
               </li>
               <li>
-                <a href="#project">Contact</a>
+                <Link to="#project" className="meslinks">Contact</Link>
               </li>
             </ul>
           </div>

@@ -1,8 +1,7 @@
-
-import "./../assets/css/WorkSpace.css";
-
-import Topbar from "./../components/Topbar";
+import Topbar from "./../Components/Topbar";
 import SideBar from "../Components/SideBar";
+
+import "./../assets/css/workSpace.css";
 function WorkSpace() {
   return (
     <div className="WorkSpace">

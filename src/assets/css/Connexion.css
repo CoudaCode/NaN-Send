@@ -33,7 +33,6 @@
   font-size: 30px;
   color: var(--ma-couleur-bouton);
 }
-
 .Connexion .form {
   margin-top: 20px;
 }
@@ -45,6 +44,7 @@
   padding: 15px 20px;
   border-radius: 20px;
   margin-top: 15px;
+  color: black;
   box-shadow: var(--mon--autre--couleur) 0px 10px 10px -5px;
   border-inline: 2px solid transparent;
 }
